@@ -22,3 +22,14 @@ div#content {
 	margin: 70px 20px 20px 240px ;
 	background-color:#80B3FF;
 }
+
+div#beer-info {
+	position:relative;
+	padding:10px;
+	background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0));
+}
+
+img {
+	display:block;
+	width:100%;
+}
