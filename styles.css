@@ -1,10 +1,14 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+
 body {
 	background-color:#2D2E2E;
+	font-family:"Open Sans";
 	margin:0;
 }
 
 div#header {
 	position:fixed;
+	z-index:900;
 	width:100%;
 	top:0;
 	height:50px;
@@ -21,6 +25,27 @@ div#sidebar {
 div#content {
 	margin: 70px 20px 20px 240px ;
 	background-color:#80B3FF;
+}
+
+div#label-slider {
+	position: relative;
+}
+
+div#label-slider a {
+	position:absolute;
+	top: 45%;
+	padding: 2% 2%;
+	width: auto;
+	height: auto;
+	text-decoration:none;
+	font-weight: 600;
+	font-size: 18px;
+	color:#dcdcdc;
+	background:rgba(0,0,0,0.4)
+}
+
+#slider-next {
+	right: 0;
 }
 
 div#beer-info {
