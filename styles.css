@@ -13,6 +13,7 @@ img {
 
 ul {
 	padding:0px;
+	margin:0px;
 }
 
 li {
@@ -21,6 +22,51 @@ li {
 
 img.slide {
 	width:650px;
+}
+div.scale-tag {
+	display:inline-block;
+	width:40px;
+}
+
+div.meter {
+	position:relative;
+	height:40px
+}
+
+div.needle {
+	position:absolute;
+	top:4px;
+	left:30px;
+	width:30px;
+}
+
+div.meter-value {
+	width:100%;
+	text-align:center;
+}
+
+div.scale {
+	display:inline-block;
+	width:550px;
+	height:10px;
+	background: linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+}
+
+div.scale-tag {
+	text-align:right;
+}
+
+div.circle {
+    border-radius: 50px/50px;
+    border:solid 3px #000000; 
+    width:10px;
+    height:10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+div#meter-box {
+	padding:10px 15px 10px 15px;
+	background-color:#DCDCDC;
 }
 
 img#logo {
