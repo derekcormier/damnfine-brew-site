@@ -3,11 +3,15 @@
 	<head>
 		<title>Test Layout</title>
 		<link rel="stylesheet" type="text/css" href="./styles.css">
+		<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="./slider.js"></script>
 	</head>
 	
 	<body>
 		<div id="header">
-			header
+			<div id="logo-back">
+				<img id="logo" src="./images/logo.png" alt="" />
+			</div>
 		</div>
 		
 		<div id="sidebar">
@@ -18,21 +22,18 @@
 			<div id="label-slider">
 				<a href="#" id="slider-previous">&lt;&lt;</a>
 				<a href="#" id="slider-next">&gt;&gt;</a>
-				<img src="./images/lights.svg"/>
+				<ul>
+					<li><img class="slide" src="./images/lights.svg"/></li>
+					<li><img class="slide" src="./images/singlec.svg"></li>
+					<li><img class="slide" src="./images/doublec.svg"></li>
+					<li><img class="slide" src="./images/triplec.svg"></li>
+				</ul>
 			</div>
 			<div id="beer-info">
-				<p>Beer is beery</p>
-				<p>Yep, beer</p>
-				<p>beeeeeeeeer</p>
-				<p>Beer is beery</p>
-				<p>Yep, beer</p>
-				<p>beeeeeeeeer</p>
-				<p>Beer is beery</p>
-				<p>Yep, beer</p>
-				<p>beeeeeeeeer</p>
-				<p>Beer is beery</p>
-				<p>Yep, beer</p>
-				<p>beeeeeeeeer</p>
+				<p id="slideCount"></p>
+				<p id="slideWidth"></p>
+				<p id="slideHeight"></p>
+				<p id="sliderUlWidth"></p>
 			</div>
 		</div>
 	</body>
