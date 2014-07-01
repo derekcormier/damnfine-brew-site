@@ -5,7 +5,7 @@ $(document).ready(function()
 	var abv = [6, 6.8, 6.8, 6.8, 5.2, "?", 6.8];
 	var ibu = [83, 26, 26, 26, 35, "?", 52];
 	var srm = [30, 25, 25, 25, 6, "?", 8];
-	var highlight = ["#80B3FF", "#aaaaaa", "#aaaaaa", "#aaaaaa", "#d45500", "#587b45", "#db593f"];
+	var highlight = ["#80B3FF", "#aaaaaa", "#aaaaaa", "#aaaaaa", "#ff7f2a", "#587b45", "#db593f"];
 	
 	var sliderCount = $('#label-slider ul li').length;
 	var sliderWidth = $('#label-slider ul li').width();
@@ -37,7 +37,7 @@ $(document).ready(function()
 		
 		function updateValue(meterID, newValue, valueLimit) {
 			if (newValue == "?") {
-				$(meterID + ' .needle').stop(true).animate({left: ((meterwidth * .5) - 5)}, {duration: 750});
+				$(meterID + ' .needle').stop(true).animate({left: ((meterwidth * .5) + 30)}, {duration: 750});
 				$(meterID + ' div .meter-value').text("??");
 			} else {
 			
@@ -53,7 +53,7 @@ $(document).ready(function()
 					var currentValue = $(meterID + ' div .meter-value').text();
 				}
 			
-				$(meterID + ' .needle').stop(true).animate({left: (meterwidth * (newValue/valueLimit) - 5)}, {duration: 750});
+				$(meterID + ' .needle').stop(true).animate({left: (meterwidth * (newValue/valueLimit) + 30)}, {duration: 750});
 				
 				$({someValue: currentValue}).animate({someValue: newValue}, {
 					duration: 750,
