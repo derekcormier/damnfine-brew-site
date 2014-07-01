@@ -5,7 +5,7 @@ $(document).ready(function()
 	var abv = [6, 6.8, 6.8, 6.8, 5.2, "?", 6.8];
 	var ibu = [83, 26, 26, 26, 35, "?", 52];
 	var srm = [30, 25, 25, 25, 6, "?", 8];
-	var highlight = ["#", "#", "#", "#", "#", "#", "#"];
+	var highlight = ["#80B3FF", "#aaaaaa", "#aaaaaa", "#aaaaaa", "#d45500", "#587b45", "#db593f"];
 	
 	var sliderCount = $('#label-slider ul li').length;
 	var sliderWidth = $('#label-slider ul li').width();
@@ -28,6 +28,8 @@ $(document).ready(function()
 		var srmLimit = 35;
 		
 		$('#labelNum').text(labelNum);
+		
+		$('#content').animate({'background-color': highlight[labelNum]},600);
 		
 		updateValue('#abv', abv, abvLimit);
 		updateValue('#ibu', ibu, ibuLimit);
