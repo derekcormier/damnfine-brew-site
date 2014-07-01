@@ -135,14 +135,14 @@ div#label-slider a {
 	font-size: 18px;
 	color:#dcdcdc;
 	background:rgba(0,0,0,0.4);
-	z-index:999;
+	z-index:500;
 }
 
 #label-slider ul {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 #label-slider ul li {
