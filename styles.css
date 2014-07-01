@@ -11,18 +11,15 @@ img {
 	width:100%;
 }
 
-ul {
-	padding:0px;
-	margin:0px;
-}
-
 li {
 	list-style: none;
 }
 
-img.slide {
+li.slide {
+	display:block;
 	width:650px;
 }
+
 div.scale-tag {
 	display:inline-block;
 	width:40px;
@@ -123,6 +120,8 @@ div#content {
 
 div#label-slider {
 	position: relative;
+	overflow: hidden;
+	margin: 20px auto 0 auto;
 }
 
 div#label-slider a {
@@ -135,7 +134,26 @@ div#label-slider a {
 	font-weight: 600;
 	font-size: 18px;
 	color:#dcdcdc;
-	background:rgba(0,0,0,0.4)
+	background:rgba(0,0,0,0.4);
+	z-index:999;
+}
+
+#label-slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#label-slider ul li {
+	position: relative;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 650px;
+	background: #ccc;
+	text-align: center;
 }
 
 #slider-next {
