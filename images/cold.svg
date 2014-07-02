@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="Cold Refreshing.svg">
+   sodipodi:docname="cold.svg">
   <defs
      id="defs4">
     <linearGradient
@@ -57,14 +57,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7071068"
-     inkscape:cx="-179.99083"
-     inkscape:cy="-156.26145"
+     inkscape:zoom="11.313709"
+     inkscape:cx="27.192807"
+     inkscape:cy="85.265989"
      inkscape:document-units="px"
-     inkscape:current-layer="flowRoot3743"
+     inkscape:current-layer="layer6"
      showgrid="false"
-     inkscape:window-width="1280"
-     inkscape:window-height="962"
+     inkscape:window-width="1920"
+     inkscape:window-height="1018"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -79,7 +79,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1107,7 +1107,7 @@
          inkscape:connector-curvature="0" />
     </g>
     <g
-       transform="matrix(0,-1,1,0,549.58788,719.15339)"
+       transform="matrix(0,-1,1,0,548.61561,719.15339)"
        style="font-size:7.56736898px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:-0.28377634px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Sansita One;-inkscape-font-specification:Sansita One"
        id="text3462-2-8"
        inkscape:transform-center-x="-5.6568541"

@@ -5,7 +5,9 @@ $(document).ready(function()
 	var abv = [6, 6.8, 6.8, 6.8, 5.2, "?", 6.8];
 	var ibu = [83, 26, 26, 26, 35, "?", 52];
 	var srm = [30, 25, 25, 25, 6, "?", 8];
-	var highlight = ["#80B3FF", "#aaaaaa", "#aaaaaa", "#aaaaaa", "#ff7f2a", "#587b45", "#db593f"];
+	var srmColor = ["rgb(8, 3, 2)", "rgb(33, 19, 18)", "rgb(33, 19, 18)", "rgb(33, 19, 18)",
+		"rgb(215, 188, 52)",  "rgb(192, 121, 56)",  "rgb(198, 148, 56)"];
+	var highlight = ["#80B3FF", "#784421", "#953532", "#9d0b0b", "#ff7f2a", "#587b45", "#db593f"];
 	
 	var sliderCount = $('#label-slider ul li').length;
 	var sliderWidth = $('#label-slider ul li').width();
@@ -29,7 +31,10 @@ $(document).ready(function()
 		
 		$('#labelNum').text(labelNum);
 		
-		$('#content').animate({'background-color': highlight[labelNum]},600);
+		$('#content').stop().animate({'background-color': highlight[labelNum]},1000);
+		$('#header').stop().animate({'background-color': highlight[labelNum]},1000);
+		$('#sidebar').stop().animate({'background-color': highlight[labelNum]},1000);
+		$('#beer').stop().animate({'border-top-color': srmColor[labelNum]},1000);
 		
 		updateValue('#abv', abv, abvLimit);
 		updateValue('#ibu', ibu, ibuLimit);
