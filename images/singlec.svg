@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="Single C.svg">
+   sodipodi:docname="singlec.svg">
   <defs
      id="defs4">
     <clipPath
@@ -35,17 +35,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="242.15624"
-     inkscape:cy="50.854936"
+     inkscape:zoom="1"
+     inkscape:cx="259.40771"
+     inkscape:cy="126.60845"
      inkscape:document-units="px"
-     inkscape:current-layer="layer5"
+     inkscape:current-layer="layer6"
      showgrid="false"
-     inkscape:window-width="944"
-     inkscape:window-height="1002"
-     inkscape:window-x="960"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
+     inkscape:window-width="1280"
+     inkscape:window-height="962"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
      units="in"
      borderlayer="true"
      showborder="false" />
@@ -57,7 +57,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -91,8 +91,9 @@
            y="107.54513" /></flowRegion><flowPara
          id="flowPara3741" /></flowRoot>    <path
        style="fill:#784421;fill-opacity:1;stroke:none"
-       d="m 5.0755656e-8,0.27833039 32.027961949244343,0 0,269.72164961 -32.027961949244343,0 z"
-       id="rect4652" />
+       d="m -0.3977475,-0.00893173 32.4257095,0 0,270.14149173 -32.4257095,0 z"
+       id="rect4652"
+       inkscape:connector-curvature="0" />
     <g
        transform="matrix(0,-1,1,0,-54.281477,-8.3584548)"
        style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:justify;line-height:82.99999832999999700%;letter-spacing:-0.46999999999999997px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Franklin Gothic Medium;-inkscape-font-specification:Franklin Gothic Medium"
@@ -945,13 +946,14 @@
     </g>
     <path
        style="fill:#784421;fill-opacity:1;stroke:none"
-       d="m 348.24054,-0.0074313 11.82356,0 0,259.7752713 -11.82356,0 z"
-       id="rect4652-8" />
+       d="m 348.24113,0.00428745 11.82297,0 0,234.92642255 -11.82297,0 z"
+       id="rect4652-8"
+       inkscape:connector-curvature="0" />
     <path
-       transform="matrix(0,1,-1,0,0,0)"
        style="fill:#502d16;fill-opacity:1;stroke:none"
-       d="m 234.668,-359.97076 35.34265,0 0,11.76273 -35.34265,0 z"
-       id="rect3590" />
+       d="m 359.99286,234.668 0,35.45314 -11.78483,0 0,-35.45314 z"
+       id="rect3590"
+       inkscape:connector-curvature="0" />
     <g
        transform="matrix(0,0.13078948,-0.13078948,0,340.35356,245.38095)"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;line-height:125%;letter-spacing:-6px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Old Block;-inkscape-font-specification:Old Block Ultra-Bold"

@@ -35,17 +35,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.0000001"
-     inkscape:cx="290.99439"
-     inkscape:cy="81.92896"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="481.084"
+     inkscape:cy="78.438457"
      inkscape:document-units="px"
-     inkscape:current-layer="layer5"
+     inkscape:current-layer="layer6"
      showgrid="false"
-     inkscape:window-width="944"
-     inkscape:window-height="1002"
-     inkscape:window-x="960"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
+     inkscape:window-width="1280"
+     inkscape:window-height="962"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
      units="in"
      borderlayer="true"
      showborder="false"
@@ -93,8 +93,9 @@
            y="107.54513" /></flowRegion><flowPara
          id="flowPara3741" /></flowRoot>    <path
        style="fill:#732520;fill-opacity:1;stroke:none"
-       d="m 5.0755656e-8,0.27833039 32.665786949244342,0 0,269.72164961 -32.665786949244342,0 z"
-       id="rect4652" />
+       d="m -0.40879602,0.00211683 33.07458302,0 0,270.12286317 -33.07458302,0 z"
+       id="rect4652"
+       inkscape:connector-curvature="0" />
     <g
        transform="matrix(0,-1,1,0,-54.281477,-8.3584548)"
        style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:justify;line-height:82.99999832999999700%;letter-spacing:-0.46999999999999997px;word-spacing:0px;text-anchor:start;fill:#070707;fill-opacity:1;stroke:none;font-family:Franklin Gothic Medium;-inkscape-font-specification:Franklin Gothic Medium"
@@ -991,13 +992,14 @@
     </g>
     <path
        style="fill:#732520;fill-opacity:1;stroke:none"
-       d="m 348.24054,-0.0074313 11.82356,0 0,259.7752713 -11.82356,0 z"
-       id="rect4652-8" />
+       d="m 348.24054,-0.0074313 11.82356,0 0,234.8377713 -11.82356,0 z"
+       id="rect4652-8"
+       inkscape:connector-curvature="0" />
     <path
-       transform="matrix(0,1,-1,0,0,0)"
        style="fill:#571c1b;fill-opacity:1;stroke:none"
-       d="m 234.668,-359.97076 35.34265,0 0,11.76273 -35.34265,0 z"
-       id="rect3590" />
+       d="m 360.0481,234.66409 0,35.47914 -11.80882,0 0,-35.47914 z"
+       id="rect3590"
+       inkscape:connector-curvature="0" />
     <g
        transform="matrix(0,0.13078948,-0.13078948,0,340.35356,245.38095)"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;line-height:125%;letter-spacing:-6px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Old Block;-inkscape-font-specification:Old Block Ultra-Bold"
