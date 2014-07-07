@@ -55,15 +55,19 @@ $(document).ready(function()
 						var currentValue = (srmLimit/2);
 					}
 				} else {
-					var currentValue = $(meterID + ' div .meter-value').text();
+					var currentValue = parseFloat($(meterID + ' div .meter-value').text());
 				}
 			
 				$(meterID + ' .needle').stop(true).animate({left: (meterwidth * (newValue/valueLimit) + 30)}, {duration: 750});
 				
-				$({someValue: currentValue}).animate({someValue: newValue}, {
+				$({value: currentValue}).animate({value: newValue}, {
 					duration: 750,
 					step: function() {
-						$(meterID + ' div .meter-value').text(Math.floor(this.someValue + ((currentValue - newValue)/750)));
+						if(meterID == "#abv") {
+							$(meterID + ' div .meter-value').text((Math.floor(10*(this.value + ((currentValue - newValue)/750))))/10);
+						} else {
+							$(meterID + ' div .meter-value').text(Math.floor(this.value + ((currentValue - newValue)/750)));
+						}
 					},
 					complete : function(){
 						$(meterID + ' div .meter-value').text(newValue);
