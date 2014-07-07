@@ -156,7 +156,7 @@ div#header {
 	width:100%;
 	top:0;
 	height:50px;
-	background-color:#8CCBD4;
+	background-color:#888888;
 	box-shadow:#000000 0 0 10px;
 }
 
@@ -170,14 +170,14 @@ div#sidebar {
 	float:left;
 	margin:0px 20px 20px 20px;
 	width:200px;
-	background-color:#8CCBD4;
+	background-color:#888888;
 	box-shadow:#000000 0 0 10px;
 }
 
 div#content {
 	margin: 70px 20px 20px 240px;
 	width:650px;
-	background-color:#80B3FF;
+	background-color:#888888;
 	box-shadow:#000000 0 0 10px;
 }
 

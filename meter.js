@@ -2,12 +2,12 @@ $(document).ready(function()
 {
 	labelNum = 0;
 
-	var abv = [6, 6.8, 6.8, 6.8, 5.2, "?", 6.8];
-	var ibu = [83, 26, 26, 26, 35, "?", 52];
-	var srm = [30, 25, 25, 25, 6, "?", 8];
-	var srmColor = ["rgb(8, 3, 2)", "rgb(33, 19, 18)", "rgb(33, 19, 18)", "rgb(33, 19, 18)",
+	var abv = [5.5, 6, 6.8, 6.8, 6.8, 5.2, "?", 6.8];
+	var ibu = [34, 83, 26, 26, 26, 35, "?", 52];
+	var srm = [9, 30, 25, 25, 25, 6, "?", 8];
+	var srmColor = ["rgb(193, 136, 56)", "rgb(8, 3, 2)", "rgb(33, 19, 18)", "rgb(33, 19, 18)", "rgb(33, 19, 18)",
 		"rgb(215, 188, 52)",  "rgb(192, 121, 56)",  "rgb(198, 148, 56)"];
-	var highlight = ["#80B3FF", "#784421", "#953532", "#9d0b0b", "#ff7f2a", "#587b45", "#db593f"];
+	var highlight = ["#6b754a", "#80B3FF", "#784421", "#953532", "#9d0b0b", "#ff7f2a", "#587b45", "#db593f"];
 	
 	var sliderCount = $('#label-slider ul li').length;
 	var sliderWidth = $('#label-slider ul li').width();
