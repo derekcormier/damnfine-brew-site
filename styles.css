@@ -16,7 +16,9 @@ li {
 }
 
 li.slide {
+	position:relative;
 	display:block;
+	top:0px;
 	width:650px;
 }
 
@@ -62,9 +64,18 @@ div.circle {
 	margin-right: auto;
 }
 
+div#curtain {
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background-color:#DCDCDC;
+	z-index:999;
+}
+
 div#info-box {
 	overflow: auto;
-	
 }
 
 div#glass {

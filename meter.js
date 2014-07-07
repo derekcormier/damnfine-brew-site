@@ -1,4 +1,4 @@
-$(document).ready(function()
+$(window).load(function()
 {
 	labelNum = 0;
 
@@ -21,6 +21,8 @@ $(document).ready(function()
     $('#label-slider ul li:last-child').prependTo('#label-slider ul');
 	
 	updateMeter(abv[0], ibu[0], srm[0]);
+	
+	$('#curtain').css({"display":"none"});
 	
 	function updateMeter(abv, ibu, srm) {
 		
