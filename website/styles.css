@@ -64,6 +64,38 @@ div.circle {
 	margin-right: auto;
 }
 
+/* RECIPE BOX */
+
+div.recipeComponent {
+	margin-left: 10px;
+	display: block;
+}
+
+div.recipeComponent h1 {
+	margin: 0px;
+	font-weight:normal;
+}
+
+div.recipeComponent table {
+	width:96%;
+	margin:10px;
+	border-collapse: collapse;
+	background: #CBCBCB;
+}
+
+div.recipeComponent th{
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+
+div#recipeBox {
+	display: block;
+	margin-top: 10px;
+	background-color:#DCDCDC;
+}
+
+/* OTHER */
+
 div#curtain {
 	position:fixed;
 	top:0px;
