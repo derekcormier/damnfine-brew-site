@@ -19,7 +19,7 @@ li.slide {
 	position:relative;
 	display:block;
 	top:0px;
-	width:650px;
+	width:640px;
 }
 
 div.scale-tag {
@@ -174,20 +174,20 @@ div#header {
 div#page {
 	margin-left:auto;
 	margin-right:auto;
-	width:910px;
+	width:960px;
 }
 
 div#sidebar {
 	float:left;
-	margin:0px 20px 20px 20px;
-	width:200px;
+	margin:0px 20px 20px 0px;
+	width:300px;
 	background-color:#888888;
 	box-shadow:#000000 0 0 10px;
 }
 
 div#content {
-	margin: 70px 20px 20px 240px;
-	width:650px;
+	margin: 70px 20px 20px 320px;
+	width:640px;
 	background-color:#888888;
 	box-shadow:#000000 0 0 10px;
 }
@@ -202,7 +202,7 @@ div#label-slider a {
 	position:absolute;
 	top: 45%;
 	padding: 2% 2%;
-	width:650;
+	width:640;
 	height: auto;
 	text-decoration:none;
 	font-weight: 600;
@@ -225,7 +225,7 @@ div#label-slider a {
 	float: left;
 	margin: 0;
 	padding: 0;
-	width: 650px;
+	width: 640px;
 	background: #ccc;
 	text-align: center;
 }

@@ -1,0 +1,17 @@
+MacGreggor's Brew Pale Ale:
+INSERT INTO beers (name, label_image, abv, ibu, srm, highlight_color, description) VALUES ('MacGreggor\'s Brew Pale Ale', 'mcgbrew.svg', 5.5, 34, 9, '#6b754a', 'This is just a test description. This will be replaced with a real one soon.');
+
+Lights Out Black IPA
+INSERT INTO beers (name, label_image, abv, ibu, srm, highlight_color, description) VALUES ('Lights Out Black IPA', 'lights.svg', 6, 83, 30, '#80B3FF', 'This is just a test description. This will be replaced with a real one soon.');
+
+Single C Chocolate Porter
+INSERT INTO beers (name, label_image, abv, ibu, srm, highlight_color, description) VALUES ('Single C Chocolate Porter', 'singlec.svg', 6.8, 26, 25, '#784421', 'This is just a test description. This will be replaced with a real one soon.');
+
+Double C Chocolate Cherry Porter
+INSERT INTO beers (name, label_image, abv, ibu, srm, highlight_color, description) VALUES ('Double C Chocolate Porter', 'doublec.svg', 6.8, 26, 25, '#953532', 'This is just a test description. This will be replaced with a real one soon.');
+
+Triple C Chocolate Cherry Chili Porter
+INSERT INTO beers (name, label_image, abv, ibu, srm, highlight_color, description) VALUES ('Triple C Chocolate Cherry Chili Porter', 'triplec.svg', 6.8, 26, 25, '#9d0b0b', 'This is just a test description. This will be replaced with a real one soon.');
+
+Rye Raven Rye Pale Ale
+INSERT INTO beers (name, label_image, abv, ibu, srm, highlight_color, description) VALUES ('Triple C Chocolate Cherry Chili Porter', 'triplec.svg', 6.8, 26, 25, '#9d0b0b', 'This is just a test description. This will be replaced with a real one soon.');
