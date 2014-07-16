@@ -67,6 +67,7 @@ div.circle {
 /* RECIPE BOX */
 
 div.recipeComponent {
+	padding-top: 20px;
 	margin-left: 10px;
 	display: block;
 }
@@ -74,6 +75,7 @@ div.recipeComponent {
 div.recipeComponent h1 {
 	margin: 0px;
 	font-weight:normal;
+	font-size:22px;
 }
 
 div.recipeComponent table {
@@ -84,8 +86,13 @@ div.recipeComponent table {
 }
 
 div.recipeComponent th{
+	padding-left: 4px;
 	border-top: 1px solid gray;
 	border-bottom: 1px solid gray;
+}
+
+div.recipeComponent td {
+	padding: 4px;
 }
 
 div#recipeBox {
