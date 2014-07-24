@@ -1,5 +1,6 @@
 $(window).load(function()
 {
+	previousLabelNum = 1;
 	labelNum = 0;
 
 	var abv = [5.5, 6, 6.8, 6.8, 6.8, 5.2, "?", 6.8];
@@ -31,8 +32,6 @@ $(window).load(function()
 		var ibuLimit = 120;
 		var srmLimit = 35;
 		
-		$('#labelNum').text(labelNum);
-		
 		$('#content').stop().animate({'background-color': highlight[labelNum]},1000);
 		$('#header').stop().animate({'background-color': highlight[labelNum]},1000);
 		$('#sidebar').stop().animate({'background-color': highlight[labelNum]},1000);
@@ -41,6 +40,9 @@ $(window).load(function()
 		updateValue('#abv', abv, abvLimit);
 		updateValue('#ibu', ibu, ibuLimit);
 		updateValue('#srm', srm, srmLimit);
+		
+		$('#beerDetails' + labelNum).css({"display":"block"});
+		$('#beerDetails' + previousLabelNum).css({"display":"none"});
 		
 		function updateValue(meterID, newValue, valueLimit) {
 			if (newValue == "?") {
@@ -83,9 +85,12 @@ $(window).load(function()
 		
 		if (labelNum != 0) {
 			labelNum -= 1;
+			$('#recipe' + labelNum).css({"display":"none"});
 		} else {
 			labelNum = (sliderCount - 1);
 		}
+		
+		
 		
 		updateMeter(abv[labelNum], ibu[labelNum], srm[labelNum]);
 	
@@ -116,10 +121,16 @@ $(window).load(function()
     };
 
     $('a#slider-previous').click(function () {
+	
+		previousLabelNum = labelNum;
+	
         moveLeft();
     });
 
     $('a#slider-next').click(function () {
+	
+		previousLabelNum = labelNum;
+	
         moveRight();
     });
 });

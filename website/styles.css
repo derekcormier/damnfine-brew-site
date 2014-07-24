@@ -67,7 +67,8 @@ div.circle {
 /* RECIPE BOX */
 
 div.recipeComponent {
-	padding-top: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	margin-left: 10px;
 	display: block;
 }
@@ -95,10 +96,30 @@ div.recipeComponent td {
 	padding: 4px;
 }
 
-div#recipeBox {
+div.brewingSteps li {
+	margin-bottom: 10px;
+	list-style-type: decimal;
+	text-align: justify;
+}
+
+div.brewingSteps ol{
+	margin-right: 35px;
+}
+
+div.recipeBox {
 	display: block;
-	margin-top: 10px;
+	margin-top: 20px;
 	background-color:#DCDCDC;
+}
+
+div.beerDetails {
+	display: none; 
+}
+
+div.batchSize {
+	float: right;
+	margin-right: 15px;
+	margin-top: 17px;
 }
 
 /* OTHER */
