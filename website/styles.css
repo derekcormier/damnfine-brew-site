@@ -106,10 +106,45 @@ div.brewingSteps ol{
 	margin-right: 35px;
 }
 
-div.recipeBox {
+.beerDetails div {
 	display: block;
-	margin-top: 20px;
+	margin-top: 00px;
 	background-color:#DCDCDC;
+}
+
+ul.tabs {
+	margin: 10px 0px 0px 0px;
+	padding: 0px;
+}
+
+.tabs li {
+	display: inline-block;
+	text-align: center;
+}
+
+.tabs li div {
+	background-color: #BABABA;
+}
+
+.tabs a {
+	text-decoration: none;
+	font-size: 25px;
+	vertical-align: middle;
+	outline-color: transparent;
+}
+
+.tabs a div {
+	color: black;
+	width: 200px;
+	height: 40px;
+}
+
+.tabs .ui-tabs-active div{
+	background-color: #DCDCDC;
+}
+
+div.story {
+	padding: 10px;
 }
 
 div.beerDetails {
@@ -298,4 +333,34 @@ div#beer-info {
 	position:relative;
 	padding:10px;
 	background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0));
+}
+
+/* table formatting */
+
+th {
+	text-align: left;
+}
+
+.fermentable-table {
+	width: 80%;
+}
+
+.hop-table {
+	width: 50%;
+}
+
+.yeast-name-table {
+	width: 50%;
+}
+
+.yeast-company-table {
+
+}
+
+.extras-name-table {
+	width: 50%;
+}
+
+.boil-ingredient-table {
+	width: 50%;
 }

@@ -21,6 +21,15 @@ $(window).load(function()
 	
     $('#label-slider ul li:last-child').prependTo('#label-slider ul');
 	
+	$('#beerDetails0').tabs();
+	$('#beerDetails1').tabs();
+	$('#beerDetails2').tabs();
+	$('#beerDetails3').tabs();
+	$('#beerDetails4').tabs();
+	$('#beerDetails5').tabs();
+	$('#beerDetails6').tabs();
+	$('#beerDetails7').tabs();
+	
 	updateMeter(abv[0], ibu[0], srm[0]);
 	
 	$('#curtain').css({"display":"none"});
@@ -43,6 +52,7 @@ $(window).load(function()
 		
 		$('#beerDetails' + labelNum).css({"display":"block"});
 		$('#beerDetails' + previousLabelNum).css({"display":"none"});
+		
 		
 		function updateValue(meterID, newValue, valueLimit) {
 			if (newValue == "?") {

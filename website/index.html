@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Damnfine Brewing</title>
@@ -6,12 +6,14 @@
 		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 		<script src="https://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
 		<script type="text/javascript" src="./meter.js"></script>
+		<meta name="description" content="Home of Damnfine Brewing, the creation of a homebrew enthusiast, showcasing the beer recipes, label design, and passion behind the craft." />
+		<meta charset="UTF-8">
 	</head>
 	
 	<body>
 		<div id="header">
 			<div id="logo-back">
-				<img id="logo" src="./images/logo.png" alt="" />
+				<img id="logo" src="./images/logo.png" alt="Damnfine Brewing Logo" />
 			</div>
 		</div>
 		
@@ -27,14 +29,14 @@
 					<a href="javascript:void(0);" id="slider-previous">&lt;&lt;</a>
 					<a href="javascript:void(0);" id="slider-next">&gt;&gt;</a>
 					<ul>
-						<li><img class="slide" src="./images/mcgbrew.svg"/></li>
-						<li><img class="slide" src="./images/lights.svg"/></li>
-						<li><img class="slide" src="./images/singlec.svg"></li>
-						<li><img class="slide" src="./images/doublec.svg"></li>
-						<li><img class="slide" src="./images/triplec.svg"></li>
-						<li><img class="slide" src="./images/raven.svg"></li>
-						<li><img class="slide" src="./images/bloody.svg"></li>
-						<li><img class="slide" src="./images/cold.svg"></li>
+						<li><img class="slide" src="./images/mcgbrew.svg" alt="The beer label for MacGreggors's Brew Pale Ale"/></li>
+						<li><img class="slide" src="./images/lights.svg" alt="The beer label for Lights Out Black IPA"/></li>
+						<li><img class="slide" src="./images/singlec.svg" alt="The beer label for Single C Chocolate Porter"></li>
+						<li><img class="slide" src="./images/doublec.svg" alt="The beer label for Double C Chocolate Cherry Porter"></li>
+						<li><img class="slide" src="./images/triplec.svg" alt="The beer label for Triple C Chocolate Cherry Chili Porter"></li>
+						<li><img class="slide" src="./images/raven.svg" alt="The beer label for Rye Raven Rye Pale Ale"></li>
+						<li><img class="slide" src="./images/bloody.svg" alt="The beer label for Transfusion Bloody Beer"></li>
+						<li><img class="slide" src="./images/cold.svg" alt="The beer label for Cold! Refreshing! Grapefruit IPA"></li>
 					</ul>
 				</div>
 				<div id="beer-info">
@@ -69,10 +71,31 @@
 						<div id="beer"></div>
 						<div id="beer-head"></div>
 						<div id="beer-head-bulge"></div>
-						<img id="glass-logo" src="./images/df.svg">
+						<img id="glass-logo" src="./images/df.svg" alt="Damnfine initials on beer glass">
 					</div>
 					<div class="beerDetails" id="beerDetails0">
-						<div class="recipeBox">
+						<ul class="tabs">
+							<li><a href="#recipeBox0"><div>Recipe</div></a></li>
+							<li><a href="#story0"><div>The Story</div></a></li>
+						</ul>
+						<div class="story" id="story0">
+							This is a story about a beer I made.
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+						</div>
+						<div class="recipeBox" id="recipeBox0">
 							<div class="batchSize">
 								<strong>Batch Size:</strong> 5 gallons
 							</div>
@@ -80,7 +103,7 @@
 								<h1>Fermentables</h1>
 								<table>
 									<tr>
-										<th align="left" width="80%">Fermentable</th>
+										<th class="fermentable-table">Fermentable</th>
 										<th colspan="2">Amount</th>
 									</tr>
 									<tr>
@@ -94,10 +117,10 @@
 								<h1>Hops</h1>
 								<table>
 									<tr>
-										<th align="left" width="50%">Hop</th>
-										<th align="left">Amount</th>
-										<th align="left">Time</th>
-										<th align="left">Use</th>
+										<th class="hop-table">Hop</th>
+										<th >Amount</th>
+										<th >Time</th>
+										<th >Use</th>
 									</tr>
 									<tr>
 										<td>Cascade</td>
@@ -117,9 +140,9 @@
 								<h1>Yeast</h1>
 								<table>
 									<tr>
-										<th align="left" width="50%">Name</th>
-										<th align="left" width="25%">Company</th>
-										<th align="left" width="25%">Type</th>
+										<th class="yeast-name-table">Name</th>
+										<th>Company</th>
+										<th>Type</th>
 									</tr>
 									<tr>
 										<td>BRY-97</td>
@@ -132,9 +155,9 @@
 								<h1>Extras</h1>
 								<table>
 									<tr>
-										<th align="left" width="50%">Name</th>
-										<th align="left" width="25%">Amount</th>
-										<th align="left" width="25%">Use</th>
+										<th class="extras-name-table">Name</th>
+										<th>Amount</th>
+										<th>Use</th>
 									</tr>
 									<tr>
 										<td>Caramel 20L</td>
@@ -157,9 +180,9 @@
 										Follow the Boil Schedule:
 										<table>
 											<tr>
-												<th align="left" width="50%">Ingredient</th>
-												<th align="left">Amount</th>
-												<th align="left">Time</th>
+												<th  class="boil-ingredient-table">Ingredient</th>
+												<th >Amount</th>
+												<th >Time</th>
 											</tr>
 											<tr>
 												<td>Light LME</td>
@@ -189,7 +212,28 @@
 						</div>
 					</div>
 					<div class="beerDetails" id="beerDetails1">
-						<div class="recipeBox">
+						<ul class="tabs">
+							<li><a href="#recipeBox1"><div>Recipe</div></a></li>
+							<li><a href="#story1"><div>The Story</div></a></li>
+						</ul>
+						<div class="story" id="story1">
+							This is a story about a beer I made.
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+						</div>
+						<div class="recipeBox" id="recipeBox1">
 							<div class="batchSize">
 								<strong>Batch Size:</strong> 5 gallons
 							</div>
@@ -197,7 +241,7 @@
 								<h1>Fermentables</h1>
 								<table>
 									<tr>
-										<th align="left" width="80%">Fermentable</th>
+										<th class="fermentable-table">Fermentable</th>
 										<th colspan="2">Amount</th>
 									</tr>
 									<tr>
@@ -221,10 +265,10 @@
 								<h1>Hops</h1>
 								<table>
 									<tr>
-										<th align="left" width="50%">Hop</th>
-										<th align="left">Amount</th>
-										<th align="left">Time</th>
-										<th align="left">Use</th>
+										<th class="hop-table">Hop</th>
+										<th >Amount</th>
+										<th >Time</th>
+										<th >Use</th>
 									</tr>
 									<tr>
 										<td>Magnum</td>
@@ -256,9 +300,9 @@
 								<h1>Yeast</h1>
 								<table>
 									<tr>
-										<th align="left" width="50%">Name</th>
-										<th align="left" width="25%">Company</th>
-										<th align="left" width="25%">Type</th>
+										<th class="yeast-name-table">Name</th>
+										<th>Company</th>
+										<th>Type</th>
 									</tr>
 									<tr>
 										<td>BRY-97</td>
@@ -271,9 +315,9 @@
 								<h1>Extras</h1>
 								<table>
 									<tr>
-										<th align="left" width="50%">Name</th>
-										<th align="left" width="25%">Amount</th>
-										<th align="left" width="25%">Use</th>
+										<th class="extras-name-table">Name</th>
+										<th>Amount</th>
+										<th>Use</th>
 									</tr>
 									<tr>
 										<td>Victory</td>
@@ -301,9 +345,9 @@
 										Follow the Boil Schedule:
 										<table>
 											<tr>
-												<th align="left" width="50%">Ingredient</th>
-												<th align="left">Amount</th>
-												<th align="left">Time</th>
+												<th  class="boil-ingredient-table">Ingredient</th>
+												<th >Amount</th>
+												<th >Time</th>
 											</tr>
 											<tr>
 												<td>Special Dark LME</td>
@@ -345,7 +389,28 @@
 						</div>
 					</div>
 					<div class="beerDetails" id="beerDetails2">
-						<div class="recipeBox">
+						<ul class="tabs">
+							<li><a href="#recipeBox2"><div>Recipe</div></a></li>
+							<li><a href="#story2"><div>The Story</div></a></li>
+						</ul>
+						<div class="story" id="story2">
+							This is a story about a beer I made.
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+						</div>
+						<div class="recipeBox" id="recipeBox2">
 							<div class="batchSize">
 								<strong>Batch Size:</strong> 3 gallons
 							</div>
@@ -353,7 +418,7 @@
 								<h1>Fermentables</h1>
 								<table>
 									<tr>
-										<th align="left" width="80%">Fermentable</th>
+										<th class="fermentable-table">Fermentable</th>
 										<th colspan="2">Amount</th>
 									</tr>
 									<tr>
@@ -382,10 +447,10 @@
 								<h1>Hops</h1>
 								<table>
 									<tr>
-										<th align="left" width="50%">Hop</th>
-										<th align="left">Amount</th>
-										<th align="left">Time</th>
-										<th align="left">Use</th>
+										<th class="hop-table">Hop</th>
+										<th >Amount</th>
+										<th >Time</th>
+										<th >Use</th>
 									</tr>
 									<tr>
 										<td>Fuggles</td>
@@ -411,9 +476,9 @@
 								<h1>Yeast</h1>
 								<table>
 									<tr>
-										<th align="left" width="50%">Name</th>
-										<th align="left" width="25%">Company</th>
-										<th align="left" width="25%">Type</th>
+										<th class="yeast-name-table">Name</th>
+										<th>Company</th>
+										<th>Type</th>
 									</tr>
 									<tr>
 										<td>British Ale 1098</td>
@@ -426,9 +491,9 @@
 								<h1>Extras</h1>
 								<table>
 									<tr>
-										<th align="left" width="50%">Name</th>
-										<th align="left" width="25%">Amount</th>
-										<th align="left" width="25%">Use</th>
+										<th class="extras-name-table">Name</th>
+										<th>Amount</th>
+										<th>Use</th>
 									</tr>
 									<tr>
 										<td>Unsweetened Cocoa Powder</td>
@@ -454,7 +519,7 @@
 										<td>Well Vodka</td>
 										<td>Very little</td>
 										<td>Soaking Additions</td>
-									<tr>
+									</tr>
 								</table>
 							</div>
 							<div class="recipeComponent brewingSteps">
@@ -467,9 +532,9 @@
 										Follow the Boil Schedule:
 										<table>
 											<tr>
-												<th align="left" width="50%">Ingredient</th>
-												<th align="left">Amount</th>
-												<th align="left">Time</th>
+												<th  class="boil-ingredient-table">Ingredient</th>
+												<th >Amount</th>
+												<th >Time</th>
 											</tr>
 											<tr>
 												<td>Fuggles Hops</td>
@@ -504,7 +569,28 @@
 						</div>
 					</div>
 					<div class="beerDetails" id="beerDetails3">
-						<div class="recipeBox">
+						<ul class="tabs">
+							<li><a href="#recipeBox3"><div>Recipe</div></a></li>
+							<li><a href="#story3"><div>The Story</div></a></li>
+						</ul>
+						<div class="story" id="story3">
+							This is a story about a beer I made.
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+						</div>
+						<div class="recipeBox" id="recipeBox3">
 							<div class="batchSize">
 								<strong>Batch Size:</strong> 3 gallons
 							</div>
@@ -512,7 +598,7 @@
 								<h1>Fermentables</h1>
 								<table>
 									<tr>
-										<th align="left" width="80%">Fermentable</th>
+										<th class="fermentable-table">Fermentable</th>
 										<th colspan="2">Amount</th>
 									</tr>
 									<tr>
@@ -541,10 +627,10 @@
 								<h1>Hops</h1>
 								<table>
 									<tr>
-										<th align="left" width="50%">Hop</th>
-										<th align="left">Amount</th>
-										<th align="left">Time</th>
-										<th align="left">Use</th>
+										<th class="hop-table">Hop</th>
+										<th >Amount</th>
+										<th >Time</th>
+										<th >Use</th>
 									</tr>
 									<tr>
 										<td>Fuggles</td>
@@ -570,9 +656,9 @@
 								<h1>Yeast</h1>
 								<table>
 									<tr>
-										<th align="left" width="50%">Name</th>
-										<th align="left" width="25%">Company</th>
-										<th align="left" width="25%">Type</th>
+										<th class="yeast-name-table">Name</th>
+										<th>Company</th>
+										<th>Type</th>
 									</tr>
 									<tr>
 										<td>British Ale 1098</td>
@@ -585,9 +671,9 @@
 								<h1>Extras</h1>
 								<table>
 									<tr>
-										<th align="left" width="50%">Name</th>
-										<th align="left" width="25%">Amount</th>
-										<th align="left" width="25%">Use</th>
+										<th class="extras-name-table">Name</th>
+										<th>Amount</th>
+										<th>Use</th>
 									</tr>
 									<tr>
 										<td>Cocoa Powder</td>
@@ -613,7 +699,7 @@
 										<td>Well Vodka</td>
 										<td>Very little</td>
 										<td>Soaking Additions</td>
-									<tr>
+									</tr>
 								</table>
 							</div>
 							<div class="recipeComponent brewingSteps">
@@ -626,9 +712,9 @@
 										Follow the Boil Schedule:
 										<table>
 											<tr>
-												<th align="left" width="50%">Ingredient</th>
-												<th align="left">Amount</th>
-												<th align="left">Time</th>
+												<th  class="boil-ingredient-table">Ingredient</th>
+												<th >Amount</th>
+												<th >Time</th>
 											</tr>
 											<tr>
 												<td>Fuggles Hops</td>
@@ -662,8 +748,29 @@
 							</div>
 						</div>
 					</div>
-					<div class="beerDetails" id="beerDetails4">				
-						<div class="recipeBox">
+					<div class="beerDetails" id="beerDetails4">
+						<ul class="tabs">
+							<li><a href="#recipeBox4"><div>Recipe</div></a></li>
+							<li><a href="#story4"><div>The Story</div></a></li>
+						</ul>
+						<div class="story" id="story4">
+							This is a story about a beer I made.
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+						</div>					
+						<div class="recipeBox" id="recipeBox4">
 							<div class="batchSize">
 								<strong>Batch Size:</strong> 3 gallons
 							</div>
@@ -671,7 +778,7 @@
 								<h1>Fermentables</h1>
 								<table>
 									<tr>
-										<th align="left" width="80%">Fermentable</th>
+										<th class="fermentable-table">Fermentable</th>
 										<th colspan="2">Amount</th>
 									</tr>
 									<tr>
@@ -700,10 +807,10 @@
 								<h1>Hops</h1>
 								<table>
 									<tr>
-										<th align="left" width="50%">Hop</th>
-										<th align="left">Amount</th>
-										<th align="left">Time</th>
-										<th align="left">Use</th>
+										<th class="hop-table">Hop</th>
+										<th >Amount</th>
+										<th >Time</th>
+										<th >Use</th>
 									</tr>
 									<tr>
 										<td>Fuggles</td>
@@ -729,9 +836,9 @@
 								<h1>Yeast</h1>
 								<table>
 									<tr>
-										<th align="left" width="50%">Name</th>
-										<th align="left" width="25%">Company</th>
-										<th align="left" width="25%">Type</th>
+										<th class="yeast-name-table">Name</th>
+										<th>Company</th>
+										<th>Type</th>
 									</tr>
 									<tr>
 										<td>British Ale 1098</td>
@@ -744,9 +851,9 @@
 								<h1>Extras</h1>
 								<table>
 									<tr>
-										<th align="left" width="50%">Name</th>
-										<th align="left" width="25%">Amount</th>
-										<th align="left" width="25%">Use</th>
+										<th class="extras-name-table">Name</th>
+										<th>Amount</th>
+										<th>Use</th>
 									</tr>
 									<tr>
 										<td>Cocoa Powder</td>
@@ -772,7 +879,7 @@
 										<td>Well Vodka</td>
 										<td>Very little</td>
 										<td>Soaking Additions</td>
-									<tr>
+									</tr>
 								</table>
 							</div>
 							<div class="recipeComponent brewingSteps">
@@ -785,9 +892,9 @@
 										Follow the Boil Schedule:
 										<table>
 											<tr>
-												<th align="left" width="50%">Ingredient</th>
-												<th align="left">Amount</th>
-												<th align="left">Time</th>
+												<th  class="boil-ingredient-table">Ingredient</th>
+												<th >Amount</th>
+												<th >Time</th>
 											</tr>
 											<tr>
 												<td>Fuggles Hops</td>
@@ -821,8 +928,29 @@
 							</div>
 						</div>
 					</div>
-					<div class="beerDetails" id="beerDetails5">	
-						<div class="recipeBox">
+					<div class="beerDetails" id="beerDetails5">
+						<ul class="tabs">
+							<li><a href="#recipeBox5"><div>Recipe</div></a></li>
+							<li><a href="#story5"><div>The Story</div></a></li>
+						</ul>
+						<div class="story" id="story5">
+							This is a story about a beer I made.
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+						</div>
+						<div class="recipeBox" id="recipeBox5">
 							<div class="batchSize">
 								<strong>Batch Size:</strong> 3 gallons
 							</div>
@@ -830,7 +958,7 @@
 								<h1>Fermentables</h1>
 								<table>
 									<tr>
-										<th align="left" width="80%">Fermentable</th>
+										<th class="fermentable-table">Fermentable</th>
 										<th colspan="2">Amount</th>
 									</tr>
 									<tr>
@@ -854,10 +982,10 @@
 								<h1>Hops</h1>
 								<table>
 									<tr>
-										<th align="left" width="50%">Hop</th>
-										<th align="left">Amount</th>
-										<th align="left">Time</th>
-										<th align="left">Use</th>
+										<th class="hop-table">Hop</th>
+										<th >Amount</th>
+										<th >Time</th>
+										<th >Use</th>
 									</tr>
 									<tr>
 										<td>Columbus</td>
@@ -883,9 +1011,9 @@
 								<h1>Yeast</h1>
 								<table>
 									<tr>
-										<th align="left" width="50%">Name</th>
-										<th align="left" width="25%">Company</th>
-										<th align="left" width="25%">Type</th>
+										<th class="yeast-name-table">Name</th>
+										<th>Company</th>
+										<th>Type</th>
 									</tr>
 									<tr>
 										<td>American Ale WLP060</td>
@@ -904,9 +1032,9 @@
 										Follow the Boil Schedule:
 										<table>
 											<tr>
-												<th align="left" width="50%">Ingredient</th>
-												<th align="left">Amount</th>
-												<th align="left">Time</th>
+												<th  class="boil-ingredient-table">Ingredient</th>
+												<th >Amount</th>
+												<th >Time</th>
 											</tr>
 											<tr>
 												<td>Columbus Hops</td>
@@ -928,7 +1056,28 @@
 						</div>
 					</div>
 					<div class="beerDetails" id="beerDetails6">
-						<div class="recipeBox">
+						<ul class="tabs">
+							<li><a href="#recipeBox6"><div>Recipe</div></a></li>
+							<li><a href="#story6"><div>The Story</div></a></li>
+						</ul>
+						<div class="story" id="story6">
+							This is a story about a beer I made.
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+						</div>
+						<div class="recipeBox" id="recipeBox6">
 							<div class="batchSize">
 								<strong>Batch Size:</strong> 2 gallons
 							</div>
@@ -936,7 +1085,7 @@
 								<h1>Fermentables</h1>
 								<table>
 									<tr>
-										<th align="left" width="80%">Fermentable</th>
+										<th class="fermentable-table">Fermentable</th>
 										<th colspan="2">Amount</th>
 									</tr>
 									<tr>
@@ -950,10 +1099,10 @@
 								<h1>Hops</h1>
 								<table>
 									<tr>
-										<th align="left" width="50%">Hop</th>
-										<th align="left">Amount</th>
-										<th align="left">Time</th>
-										<th align="left">Use</th>
+										<th class="hop-table">Hop</th>
+										<th >Amount</th>
+										<th >Time</th>
+										<th >Use</th>
 									</tr>
 									<tr>
 										<td>Hops</td>
@@ -967,9 +1116,9 @@
 								<h1>Yeast</h1>
 								<table>
 									<tr>
-										<th align="left" width="50%">Name</th>
-										<th align="left" width="25%">Company</th>
-										<th align="left" width="25%">Type</th>
+										<th class="yeast-name-table">Name</th>
+										<th>Company</th>
+										<th>Type</th>
 									</tr>
 									<tr>
 										<td>Ale Yeast</td>
@@ -982,9 +1131,9 @@
 								<h1>Extras</h1>
 								<table>
 									<tr>
-										<th align="left" width="50%">Name</th>
-										<th align="left" width="25%">Amount</th>
-										<th align="left" width="25%">Use</th>
+										<th class="extras-name-table">Name</th>
+										<th>Amount</th>
+										<th>Use</th>
 									</tr>
 									<tr>
 										<td>Tomatoes</td>
@@ -1013,8 +1162,29 @@
 							</div>
 						</div>
 					</div>
-					<div class="beerDetails" id="beerDetails7">					
-						<div class="recipeBox">
+					<div class="beerDetails" id="beerDetails7">
+						<ul class="tabs">
+							<li><a href="#recipeBox7"><div>Recipe</div></a></li>
+							<li><a href="#story7"><div>The Story</div></a></li>
+						</ul>
+						<div class="story" id="story7">
+							This is a story about a beer I made.
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+							<p>This is a story about a beer I made.</p>
+						</div>
+						<div class="recipeBox" id="recipeBox7">
 							<div class="batchSize">
 								<strong>Batch Size:</strong> 5.5 gallons
 							</div>
@@ -1022,7 +1192,7 @@
 								<h1>Fermentables</h1>
 								<table>
 									<tr>
-										<th align="left" width="80%">Fermentable</th>
+										<th class="fermentable-table">Fermentable</th>
 										<th colspan="2">Amount</th>
 									</tr>
 									<tr>
@@ -1051,10 +1221,10 @@
 								<h1>Hops</h1>
 								<table>
 									<tr>
-										<th align="left" width="50%">Hop</th>
-										<th align="left">Amount</th>
-										<th align="left">Time</th>
-										<th align="left">Use</th>
+										<th class="hop-table">Hop</th>
+										<th >Amount</th>
+										<th >Time</th>
+										<th >Use</th>
 									</tr>
 									<tr>
 										<td>Simcoe</td>
@@ -1110,9 +1280,9 @@
 								<h1>Yeast</h1>
 								<table>
 									<tr>
-										<th align="left" width="50%">Name</th>
-										<th align="left" width="25%">Company</th>
-										<th align="left" width="25%">Type</th>
+										<th class="yeast-name-table">Name</th>
+										<th>Company</th>
+										<th>Type</th>
 									</tr>
 									<tr>
 										<td>California Ale Yeast WLP001</td>
@@ -1125,9 +1295,9 @@
 								<h1>Extras</h1>
 								<table>
 									<tr>
-										<th align="left" width="50%">Name</th>
-										<th align="left" width="25%">Amount</th>
-										<th align="left" width="25%">Use</th>
+										<th class="extras-name-table">Name</th>
+										<th>Amount</th>
+										<th>Use</th>
 									</tr>
 									<tr>
 										<td>Grapefruit Zest</td>
@@ -1147,9 +1317,9 @@
 										Follow the Boil Schedule:
 										<table>
 											<tr>
-												<th align="left" width="50%">Ingredient</th>
-												<th align="left">Amount</th>
-												<th align="left">Time</th>
+												<th  class="boil-ingredient-table">Ingredient</th>
+												<th >Amount</th>
+												<th >Time</th>
 											</tr>
 											<tr>
 												<td>Simcoe Hops</td>
