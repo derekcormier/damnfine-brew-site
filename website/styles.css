@@ -1,4 +1,8 @@
+/***************** Importing the Open Sans font *****************/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+
+
+/***************** Page-wide *****************/
 
 body {
 	background-color:#2D2E2E;
@@ -15,149 +19,8 @@ li {
 	list-style: none;
 }
 
-li.slide {
-	position:relative;
-	display:block;
-	top:0px;
-	width:640px;
-}
 
-div.scale-tag {
-	display:inline-block;
-	width:40px;
-}
-
-div.meter {
-	position:relative;
-	height:40px
-}
-
-div.needle {
-	position:absolute;
-	top:4px;
-	left:30px;
-	width:30px;
-}
-
-div.meter-value {
-	width:100%;
-	text-align:center;
-}
-
-div.scale {
-	display:inline-block;
-	width:400px;
-	height:10px;
-	background: linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
-}
-
-div.scale-tag {
-	text-align:right;
-}
-
-div.circle {
-    border-radius: 50px/50px;
-    border:solid 3px #000000; 
-    width:10px;
-    height:10px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-/* RECIPE BOX */
-
-div.recipeComponent {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin-left: 10px;
-	display: block;
-}
-
-div.recipeComponent h1 {
-	margin: 0px;
-	font-weight:normal;
-	font-size:22px;
-}
-
-div.recipeComponent table {
-	width:96%;
-	margin:10px;
-	border-collapse: collapse;
-	background: #CBCBCB;
-}
-
-div.recipeComponent th{
-	padding-left: 4px;
-	border-top: 1px solid gray;
-	border-bottom: 1px solid gray;
-}
-
-div.recipeComponent td {
-	padding: 4px;
-}
-
-div.brewingSteps li {
-	margin-bottom: 10px;
-	list-style-type: decimal;
-	text-align: justify;
-}
-
-div.brewingSteps ol{
-	margin-right: 35px;
-}
-
-.beerDetails div {
-	display: block;
-	margin-top: 00px;
-	background-color:#DCDCDC;
-}
-
-ul.tabs {
-	margin: 10px 0px 0px 0px;
-	padding: 0px;
-}
-
-.tabs li {
-	display: inline-block;
-	text-align: center;
-}
-
-.tabs li div {
-	background-color: #BABABA;
-}
-
-.tabs a {
-	text-decoration: none;
-	font-size: 25px;
-	vertical-align: middle;
-	outline-color: transparent;
-}
-
-.tabs a div {
-	color: black;
-	width: 200px;
-	height: 40px;
-}
-
-.tabs .ui-tabs-active div{
-	background-color: #DCDCDC;
-}
-
-div.story {
-	padding: 10px;
-}
-
-div.beerDetails {
-	display: none; 
-}
-
-div.batchSize {
-	float: right;
-	margin-right: 15px;
-	margin-top: 17px;
-}
-
-/* OTHER */
+/***************** Curtain *****************/
 
 div#curtain {
 	position:fixed;
@@ -169,9 +32,225 @@ div#curtain {
 	z-index:999;
 }
 
+/****************************************************************************/
+/********************************** Header **********************************/
+/****************************************************************************/
+
+div#header {
+	position:fixed;
+	z-index:900;
+	width:100%;
+	top:0;
+	height:50px;
+	background-color:#888888;
+	box-shadow:#000000 0 0 10px;
+}
+
+div#logo-back {
+	width: 200px; 
+	height: 70px; 
+	background: #dcdcdc; 
+	-moz-border-radius: 100px / 35px; 
+	-webkit-border-radius: 100px / 35px; 
+	border-radius: 100px / 35px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: #000000 0 0 10px;
+}
+
+img#logo {
+	position:relative;
+	top:16px;
+	width:170px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/**************************************************************************/
+/********************************** Page **********************************/
+/**************************************************************************/
+
+div#page {
+	margin-left:auto;
+	margin-right:auto;
+	width:960px;
+}
+
+
+/*****************************************************************************/
+/********************************** Sidebar **********************************/
+/*****************************************************************************/
+
+div#sidebar {
+	float:left;
+	margin:0px 20px 20px 0px;
+	width: 300px;
+	background-color:#888888;
+	box-shadow:#000000 0 0 10px;
+}
+
+#sidebar ul {
+	margin:0px;
+	padding: 0px;
+}
+
+#sidebar li {
+	margin-bottom: 5px;
+}
+
+#sidebar li:last-child {
+	margin-bottom: 0px;
+}
+
+#sidebar div {
+	color: black;
+	width: 285px;
+	height: 40px;
+	padding-left: 15px;
+	background-color: #DCDCDC;
+	line-height: 40px;
+}
+
+#sidebar span {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 20;
+	line-height: normal;
+}
+
+
+/*****************************************************************************/
+/********************************** Content **********************************/
+/*****************************************************************************/
+
+div#content {
+	margin: 70px 20px 20px 320px;
+	width:640px;
+	background-color:#888888;
+	box-shadow:#000000 0 0 10px;
+}
+
+
+/***************** Label Slider *****************/
+
+div#label-slider {
+	position: relative;
+	overflow: hidden;
+	margin: 20px auto 0 auto;
+}
+
+div#label-slider a {
+	position:absolute;
+	top: 45%;
+	padding: 2% 2%;
+	width:640;
+	height: auto;
+	text-decoration:none;
+	font-weight: 600;
+	font-size: 18px;
+	color:#dcdcdc;
+	background:rgba(0,0,0,0.4);
+	z-index:500;
+}
+
+#slider-next {
+	right: 0;
+}
+
+#label-slider ul {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#label-slider ul li {
+	position: relative;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 640px;
+	background: #ccc;
+	text-align: center;
+}
+
+li.slide {
+	position:relative;
+	display:block;
+	top:0px;
+	width:640px;
+}
+
+
+/***************** Beer Info *****************/
+
+div#beer-info {
+	position:relative;
+	padding:10px;
+	background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0));
+}
+
+
+/***************** Info Box *****************/
+
 div#info-box {
 	overflow: auto;
 }
+
+
+/***************** Meter Box *****************/
+
+div#meter-box {
+	float:left;
+	width:450px;
+	padding:10px 15px 10px 15px;
+	background-color:#DCDCDC;
+}
+
+div.meter {
+	position:relative;
+	height:40px
+}
+
+div.scale-tag {
+	display:inline-block;
+	width:40px;
+	text-align:right;
+}
+
+div.scale {
+	display:inline-block;
+	width:400px;
+	height:10px;
+	background: linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+}
+
+div.needle {
+	position:absolute;
+	top:4px;
+	left:30px;
+	width:30px;
+}
+
+div.circle {
+    border-radius: 50px/50px;
+    border:solid 3px #000000; 
+    width:10px;
+    height:10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.meter-value {
+	width:100%;
+	text-align:center;
+}
+
+
+/***************** Meter Box *****************/
 
 div#glass {
 	position:absolute;
@@ -228,117 +307,119 @@ img#glass-logo {
 	z-index:300;
 }
 
-div#meter-box {
-	float:left;
-	width:450px;
-	padding:10px 15px 10px 15px;
+
+/***************** Beer Details *****************/
+
+div.beerDetails {
+	display: none; 
+}
+
+.beerDetails div {
+	display: block;
+	margin-top: 00px;
 	background-color:#DCDCDC;
 }
 
-img#logo {
-	position:relative;
-	top:16px;
-	width:170px;
-	margin-left: auto;
-	margin-right: auto;
+
+/***************** Tabs *****************/
+
+ul.tabs {
+	margin: 10px 0px 0px 0px;
+	padding: 0px;
 }
 
-div#logo-back {
-	width: 200px; 
-	height: 70px; 
-	background: #dcdcdc; 
-	-moz-border-radius: 100px / 35px; 
-	-webkit-border-radius: 100px / 35px; 
-	border-radius: 100px / 35px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	box-shadow: #000000 0 0 10px;
-}
-
-div#header {
-	position:fixed;
-	z-index:900;
-	width:100%;
-	top:0;
-	height:50px;
-	background-color:#888888;
-	box-shadow:#000000 0 0 10px;
-}
-
-div#page {
-	margin-left:auto;
-	margin-right:auto;
-	width:960px;
-}
-
-div#sidebar {
-	float:left;
-	margin:0px 20px 20px 0px;
-	width:300px;
-	background-color:#888888;
-	box-shadow:#000000 0 0 10px;
-}
-
-div#content {
-	margin: 70px 20px 20px 320px;
-	width:640px;
-	background-color:#888888;
-	box-shadow:#000000 0 0 10px;
-}
-
-div#label-slider {
-	position: relative;
-	overflow: hidden;
-	margin: 20px auto 0 auto;
-}
-
-div#label-slider a {
-	position:absolute;
-	top: 45%;
-	padding: 2% 2%;
-	width:640;
-	height: auto;
-	text-decoration:none;
-	font-weight: 600;
-	font-size: 18px;
-	color:#dcdcdc;
-	background:rgba(0,0,0,0.4);
-	z-index:500;
-}
-
-#label-slider ul {
-	position: relative;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-#label-slider ul li {
-	position: relative;
-	display: block;
-	float: left;
-	margin: 0;
-	padding: 0;
-	width: 640px;
-	background: #ccc;
+.tabs li {
+	display: inline-block;
 	text-align: center;
 }
 
-#slider-next {
-	right: 0;
+.tabs a {
+	text-decoration: none;
+	font-size: 20px;
+	outline-color: transparent;
 }
 
-div#beer-info {
-	position:relative;
-	padding:10px;
-	background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0));
+.tabs div {
+	color: black;
+	width: 200px;
+	height: 40px;
+	background-color: #BABABA;
+	line-height: 40px;
 }
 
-/* table formatting */
+.tabs .ui-tabs-active div{
+	background-color: #DCDCDC;
+}
 
-th {
+.tabs span {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+}
+
+
+/***************** Story *****************/
+
+div.story {
+	padding: 10px;
+}
+
+
+/***************** Recipe Box *****************/
+
+.recipeBox th {
 	text-align: left;
+}
+
+div.batchSize {
+	float: right;
+	margin-right: 15px;
+	margin-top: 17px;
+}
+
+div.recipeComponent {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: 10px;
+	display: block;
+}
+
+div.recipeComponent h1 {
+	margin: 0px;
+	font-weight:normal;
+	font-size:22px;
+}
+
+
+
+div.brewingSteps ol{
+	margin-right: 35px;
+}
+
+div.brewingSteps li {
+	margin-bottom: 10px;
+	list-style-type: decimal;
+	text-align: justify;
+}
+
+
+/***************** Recipe Box Table *****************/
+
+div.recipeComponent table {
+	width:96%;
+	margin:10px;
+	border-collapse: collapse;
+	background: #CBCBCB;
+}
+
+div.recipeComponent th{
+	padding-left: 4px;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+
+div.recipeComponent td {
+	padding: 4px;
 }
 
 .fermentable-table {
@@ -351,10 +432,6 @@ th {
 
 .yeast-name-table {
 	width: 50%;
-}
-
-.yeast-company-table {
-
 }
 
 .extras-name-table {
