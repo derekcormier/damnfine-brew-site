@@ -2,11 +2,16 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 
 
+/***************** Importing the Sansita One Font ******************/
+@import url(http://fonts.googleapis.com/css?family=Sansita+One);
+
+
 /***************** Page-wide *****************/
 
 body {
 	background-color:#2D2E2E;
 	font-family:"Open Sans";
+	/*-webkit-font-smoothing: antialiased !important;*/
 	margin:0;
 }
 
@@ -92,7 +97,7 @@ div#sidebar {
 }
 
 #sidebar ul {
-	margin:0px;
+	margin:0px 0px 0px 10px;
 	padding: 0px;
 }
 
@@ -106,8 +111,10 @@ div#sidebar {
 
 #sidebar div {
 	color: black;
-	width: 285px;
+	width: 275px;
 	height: 40px;
+	font-size: 32px;
+	font-family:"Sansita One";
 	padding-left: 15px;
 	background-color: #DCDCDC;
 	line-height: 40px;
@@ -116,7 +123,6 @@ div#sidebar {
 #sidebar span {
 	display: inline-block;
 	vertical-align: middle;
-	font-size: 20;
 	line-height: normal;
 }
 
@@ -343,6 +349,8 @@ ul.tabs {
 	color: black;
 	width: 200px;
 	height: 40px;
+	font-family:"Sansita One";
+	font-size: 32px;
 	background-color: #BABABA;
 	line-height: 40px;
 }
