@@ -15,3 +15,7 @@ INSERT INTO beers (name, label_image, abv, ibu, srm, highlight_color, descriptio
 
 Rye Raven Rye Pale Ale
 INSERT INTO beers (name, label_image, abv, ibu, srm, highlight_color, description) VALUES ('Triple C Chocolate Cherry Chili Porter', 'triplec.svg', 6.8, 26, 25, '#9d0b0b', 'This is just a test description. This will be replaced with a real one soon.');
+
+
+
+INSERT INTO blog_post (title, posted_date, description, thumb_image, content, visits) VALUES ('I brewed a beer that was so delicious that I brewed it again', NOW(), 'This is what might show up in a blog post preview. The idea is not to give all of the information in the blog, but rather to give a concise summary.', 'test.png', 'This is a pretty lackluster blog post, isn't it.', 0);
