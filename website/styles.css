@@ -109,7 +109,7 @@ div#sidebar {
 	margin-bottom: 0px;
 }
 
-#sidebar div {
+#sidebar a div {
 	color: black;
 	width: 275px;
 	height: 40px;
@@ -124,6 +124,47 @@ div#sidebar {
 	display: inline-block;
 	vertical-align: middle;
 	line-height: normal;
+}
+
+
+/***************** Recent posts *****************/
+
+div#recent-posts {
+	background-color: #DCDCDC;
+	margin: 10px 1px 10px 10px;
+	overflow: auto;
+}
+
+div#recent-posts-header {
+	background-color: #BABABA;
+	font-family: "Sansita One";
+	padding-left: 10px;
+	margin: 5px 5px 0px 5px;
+}
+
+div.blog-preview {
+	margin:0px 5px 0px 5px;
+	padding: 5px 10px 5px 10px;
+	font-size: 10px;
+}
+
+.blog-preview h1 {
+	margin: 0px;
+	font-size: 15px;
+}
+
+.blog-preview span {
+	font-weight: bold;
+}
+
+.blog-preview p{
+	margin-bottom: 0px;
+}
+
+div.blog-preview-divider {
+	background-color: #BABABA;
+	margin: 0px 5px 0px 5px;
+	height: 2px;
 }
 
 
