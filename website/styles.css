@@ -11,7 +11,7 @@
 body {
 	background-color:#2D2E2E;
 	font-family:"Open Sans";
-	/*-webkit-font-smoothing: antialiased !important;*/
+	-webkit-text-stroke: 0.3px;
 	margin:0;
 }
 
@@ -122,7 +122,6 @@ div#sidebar {
 
 #sidebar span {
 	display: inline-block;
-	vertical-align: middle;
 	line-height: normal;
 }
 
@@ -150,15 +149,23 @@ div.blog-preview {
 
 .blog-preview h1 {
 	margin: 0px;
-	font-size: 15px;
+	font-size: 18px;
+	line-height: 100%;
 }
 
 .blog-preview span {
-	font-weight: bold;
+	font-size: 12px;
+	width: 100%;
+	text-align: right;
+	font-size: 10px;
 }
 
 .blog-preview p{
-	margin-bottom: 0px;
+	margin: 7px 0px 0px 0px;
+	padding: 0px 5px 0px 0px;
+	font-size: 13px;
+	line-height: 125%;
+	text-align: justify;
 }
 
 div.blog-preview-divider {
@@ -189,10 +196,13 @@ div#label-slider {
 }
 
 div#label-slider a {
-	position:absolute;
+
+}
+
+a#slider-previous {
 	top: 45%;
+	position:absolute;
 	padding: 2% 2%;
-	width:640;
 	height: auto;
 	text-decoration:none;
 	font-weight: 600;
@@ -200,6 +210,45 @@ div#label-slider a {
 	color:#dcdcdc;
 	background:rgba(0,0,0,0.4);
 	z-index:500;
+}
+
+a#slider-next {
+	top: 45%;
+	position:absolute;
+	padding: 2% 2%;
+	height: auto;
+	text-decoration:none;
+	font-weight: 600;
+	font-size: 18px;
+	color:#dcdcdc;
+	background:rgba(0,0,0,0.4);
+	z-index:500;
+}
+
+a#magnify {
+	position:absolute;
+	height: 100px;
+	width: 100px;
+	top: 40%;
+	left: 42%;
+	z-index:500;
+}
+
+a#magnify div {
+	height: 100px;
+	width: 100px;
+	background:rgba(0,0,0,0.4);
+	-moz-border-radius: 50px / 50px; 
+	-webkit-border-radius: 50px / 50px; 
+	border-radius: 50px / 50px;
+}
+
+a#magnify img {
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	height: 50px;
+	width: 50px;
 }
 
 #slider-next {
@@ -297,7 +346,7 @@ div.meter-value {
 }
 
 
-/***************** Meter Box *****************/
+/***************** Beer Glass *****************/
 
 div#glass {
 	position:absolute;
@@ -398,12 +447,6 @@ ul.tabs {
 
 .tabs .ui-tabs-active div{
 	background-color: #DCDCDC;
-}
-
-.tabs span {
-	display: inline-block;
-	vertical-align: middle;
-	line-height: normal;
 }
 
 

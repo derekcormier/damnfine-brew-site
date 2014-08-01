@@ -34,6 +34,13 @@ $(window).load(function()
 	
 	$('#curtain').css({"display":"none"});
 	
+	setTimeout(function(){
+		$('#slider-previous').fadeOut(400);
+		$('#slider-next').fadeOut(400);
+	}, 4000)
+	
+	$('#magnify').fadeOut(0);
+	
 	function updateMeter(abv, ibu, srm) {
 		
 		var meterwidth = $('.scale').width();
@@ -143,4 +150,14 @@ $(window).load(function()
 	
         moveRight();
     });
+	
+	$('#label-slider').hover(function (){
+		$('#slider-previous').fadeIn(400);
+		$('#slider-next').fadeIn(400);
+		$('#magnify').fadeIn(400);
+	},function(){
+		$('#slider-previous').fadeOut(400);
+		$('#slider-next').fadeOut(400);
+		$('#magnify').fadeOut(400);
+	});
 });
