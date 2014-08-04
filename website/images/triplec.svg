@@ -35,17 +35,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142137"
-     inkscape:cx="275.22269"
-     inkscape:cy="38.707101"
+     inkscape:zoom="32.000003"
+     inkscape:cx="3.6848064"
+     inkscape:cy="264.40979"
      inkscape:document-units="px"
-     inkscape:current-layer="layer5"
+     inkscape:current-layer="layer6"
      showgrid="false"
-     inkscape:window-width="944"
-     inkscape:window-height="1002"
-     inkscape:window-x="960"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1018"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
      units="in"
      borderlayer="true"
      showborder="false" />
@@ -57,7 +57,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -91,8 +91,9 @@
            y="107.54513" /></flowRegion><flowPara
          id="flowPara3741" /></flowRoot>    <path
        style="fill:#7c0000;fill-opacity:1;stroke:none"
-       d="m 5.0755656e-8,0.27833039 32.312228949244342,0 0,269.72164961 -32.312228949244342,0 z"
-       id="rect4652" />
+       d="m -0.71874988,-0.31541955 33.03097888,0 0,270.31539955 -33.03097888,0 z"
+       id="rect4652"
+       inkscape:connector-curvature="0" />
     <g
        transform="matrix(0,-1,1,0,-54.281477,-8.3584548)"
        style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:justify;line-height:82.99999832999999700%;letter-spacing:-0.46999999999999997px;word-spacing:0px;text-anchor:start;fill:#070707;fill-opacity:1;stroke:none;font-family:Franklin Gothic Medium;-inkscape-font-specification:Franklin Gothic Medium"

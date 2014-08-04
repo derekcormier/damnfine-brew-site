@@ -9,6 +9,8 @@ $(window).load(function()
 	var srmColor = ["rgb(193, 136, 56)", "rgb(8, 3, 2)", "rgb(33, 19, 18)", "rgb(33, 19, 18)", "rgb(33, 19, 18)",
 		"rgb(215, 188, 52)",  "rgb(192, 121, 56)",  "rgb(198, 148, 56)"];
 	var highlight = ["#6b754a", "#80B3FF", "#784421", "#953532", "#9d0b0b", "#ff7f2a", "#587b45", "#db593f"];
+	var labelPath = ["./images/mcgbrew.svg", "./images/lights.svg", "./images/singlec.svg", "./images/doublec.svg",
+		"./images/triplec.svg", "./images/raven.svg", "./images/bloody.svg", "./images/cold.svg"];
 	
 	var sliderCount = $('#label-slider ul li').length;
 	var sliderWidth = $('#label-slider ul li').width();
@@ -33,6 +35,7 @@ $(window).load(function()
 	updateMeter(abv[0], ibu[0], srm[0]);
 	
 	$('#curtain').css({"display":"none"});
+
 	
 	setTimeout(function(){
 		$('#slider-previous').fadeOut(400);
@@ -150,6 +153,22 @@ $(window).load(function()
 	
         moveRight();
     });
+	
+	$('a#magnify').click(function () {
+		$('#zoomed-label').attr("src", labelPath[labelNum]);
+
+		$('#magnify-back').fadeIn(400);
+	});
+	
+	$('a#unmagnify').click(function () {	
+		$('#magnify-back').fadeOut(400);
+	});
+	
+	$('#magnify-window').hover(function (){
+		$('#unmagnify').fadeIn(400);
+	},function(){
+		$('#unmagnify').fadeOut(400);
+	});
 	
 	$('#label-slider').hover(function (){
 		$('#slider-previous').fadeIn(400);

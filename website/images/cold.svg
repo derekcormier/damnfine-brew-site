@@ -57,9 +57,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="11.313709"
-     inkscape:cx="27.192807"
-     inkscape:cy="85.265989"
+     inkscape:zoom="64.000003"
+     inkscape:cx="5.4283749"
+     inkscape:cy="265.59365"
      inkscape:document-units="px"
      inkscape:current-layer="layer6"
      showgrid="false"
@@ -114,8 +114,9 @@
            y="107.54513" /></flowRegion><flowPara
          id="flowPara3741" /></flowRoot>    <path
        style="fill:#db593f;fill-opacity:1;stroke:none"
-       d="m 5.0755656e-8,0.27833039 32.87720094924434,0 0,269.72164961 -32.87720094924434,0 z"
-       id="rect4652" />
+       d="m -0.48437493,-0.12791959 33.36157593,0 0,270.12789959 -33.36157593,0 z"
+       id="rect4652"
+       inkscape:connector-curvature="0" />
     <g
        transform="matrix(0,-1,1,0,-54.281477,-8.3584548)"
        style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:justify;line-height:82.99999833%;letter-spacing:-0.47px;word-spacing:0px;text-anchor:start;fill:#323232;fill-opacity:1;stroke:none;font-family:Franklin Gothic Medium;-inkscape-font-specification:Franklin Gothic Medium"
