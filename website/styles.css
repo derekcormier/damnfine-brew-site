@@ -252,10 +252,6 @@ div#label-slider {
 	margin: 20px auto 0 auto;
 }
 
-div#label-slider a {
-
-}
-
 a#slider-previous {
 	top: 45%;
 	position:absolute;
@@ -328,13 +324,6 @@ a#magnify img {
 	width: 640px;
 	background: #ccc;
 	text-align: center;
-}
-
-li.slide {
-	position:relative;
-	display:block;
-	top:0px;
-	width:640px;
 }
 
 
