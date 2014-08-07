@@ -27,7 +27,8 @@ $(function($) {
 		"./images/triplec.svg", "./images/raven.svg", "./images/bloody.svg", "./images/cold.svg"];
 // !!! TO BE REMOVED WITH AJAX CALL TO DB !!! //
 
-	// Globals to keep track of which label the user is on
+	// Global to keep track of which label the user is on
+	previousLabelNum = 1;
 	labelNum = 0;
 	
 	$(window).load(function() {
@@ -38,41 +39,145 @@ $(function($) {
 	});
 	
 	$('a#slider-next').click(function () {
-		if (labelNum != (beerCount - 1)) {
-			labelNum += 1;
-		} else {
-			labelNum = 0;
-		}
+		sliderNext(sliderWindow);
+		incrementLabelNumber();
 		
-		sliderNext(sliderWindow, 300);
-		changeAllMeterValues(meterWindow, abv[labelNum], ibu[labelNum], srm[labelNum]);
+		switchBeer();
 	});
 	
 	$('a#slider-previous').click(function () {
-		if (labelNum != 0) {
-			labelNum -= 1;
-		} else {
-			labelNum = (beerCount - 1);
-		}
+		sliderPrevious(sliderWindow);
+		decrementLabelNumber();
 	
-		sliderPrevious(sliderWindow, 300);
-		changeAllMeterValues(meterWindow, abv[labelNum], ibu[labelNum], srm[labelNum]);
+		switchBeer();
 	});
 	
+	// Ensure that when you click a tab, all the tabs change to that tab
+	$('a.recipeTab').click(function () {
+		numberOfDetails = ('.beerDetails').length;
+		
+		for(i = 0; i < numberOfDetails; i++) {
+			$('#beerDetails' + i).tabs({active : 0});
+		}
+	});
+	
+	// Ensure that when you click a tab, all the tabs change to that tab
+	$('a.storyTab').click(function () {
+		numberOfDetails = ('.beerDetails').length;
+		
+		for(i = 0; i < numberOfDetails; i++) {
+			$('#beerDetails' + i).tabs({active : 1});
+		}
+	});
+	
+	// Clicking on the magnify button will display the label larger
+	$('a#magnify').click(function () {
+		$('#zoomed-label').attr("src", labelPath[labelNum]);
+
+		$('#magnified').fadeIn(400);
+	});
+	
+	// Clicking on the unmagnify button will return to the page
+	$('#magnify-back').click(function () {	
+		$('#magnified').fadeOut(400);
+	});
+	
+	// Clicking outside of the zoomed image will return to the page
+	$('#unmagnify').click(function () {	
+		$('#magnified').fadeOut(400);
+	});
+	
+	$('#magnify-window').hover(function (){
+		$('#unmagnify').fadeIn(400);
+	},function(){
+		$('#unmagnify').fadeOut(400);
+	});
+	
+	$('#label-slider').hover(function (){
+		$('#slider-previous').stop();
+		$('#slider-next').stop();
+		$('#magnify').stop();
+	
+		$('#slider-previous').css('display','none');
+		$('#slider-next').css('display','none');
+		$('#magnify').css('display','none');
+	
+		$('#slider-previous').fadeIn(400);
+		$('#slider-next').fadeIn(400);
+		$('#magnify').fadeIn(400);
+	},function(){
+		$('#slider-previous').stop();
+		$('#slider-next').stop();
+		$('#magnify').stop();
+		
+		$('#slider-previous').css('display','block');
+		$('#slider-next').css('display','block');
+		$('#magnify').css('display','block');
+		
+		$('#slider-previous').fadeOut(400);
+		$('#slider-next').fadeOut(400);
+		$('#magnify').fadeOut(400);
+	});
 	
 	function initializePage() {
 		initializeSlider(sliderWindow);
-		changePageHighlightColor(highlightColor[labelNum], 1000);
-		changeAllMeterValues(meterWindow, abv[labelNum], ibu[labelNum], srm[labelNum]);
+		switchBeer();
+		
+		$('#slider-previous').fadeOut(2000);
+		$('#slider-next').fadeOut(2000);
+		$('#magnify').fadeOut(2000);
+		
+		initializeAllBeerDetailsTabs();
+		$('#beerDetails' + labelNum).css({"display":"block"});
+	}
+	
+	function initializeAllBeerDetailsTabs() {
+		numberOfDetails = ('.beerDetails').length;
+		
+		for(i = 0; i < numberOfDetails; i++) {
+			$('#beerDetails' + i).tabs();
+		}
 	}
 
 	function revealPage() {
 		$('#curtain').css('display','none');
 	}
 	
+	function switchBeer() {
+		changePageHighlightColor(highlightColor[labelNum], 1000);
+		changeBeerColor(srmColor[labelNum], 1000);
+		changeAllMeterValues(meterWindow, abv[labelNum], ibu[labelNum], srm[labelNum]);
+		
+		$('#beerDetails' + labelNum).css({"display":"block"});
+		$('#beerDetails' + previousLabelNum).css({"display":"none"});
+	}
+	
 	function changePageHighlightColor(highlightColor, speed) {
 		header.stop().animate({'background-color':highlightColor}, speed);
 		sidebar.stop().animate({'background-color':highlightColor}, speed);
 		content.stop().animate({'background-color':highlightColor}, speed);
+	}
+	function changeBeerColor(beerColor, speed) {
+		$('#beer').stop().animate({'border-top-color': beerColor}, speed);
+	}
+	
+	function incrementLabelNumber() {
+		previousLabelNum = labelNum;
+	
+		if (labelNum != (beerCount - 1)) {
+			labelNum += 1;
+		} else {
+			labelNum = 0;
+		}
+	}
+	
+	function decrementLabelNumber() {
+		previousLabelNum = labelNum;
+	
+		if (labelNum != 0) {
+			labelNum -= 1;
+		} else {
+			labelNum = (beerCount - 1);
+		}
 	}
 });

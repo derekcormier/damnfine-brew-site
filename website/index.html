@@ -5,10 +5,10 @@
 		<link rel="stylesheet" type="text/css" href="./styles.css">
 		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 		<script src="https://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
-		<script src="./meter.js"></script>
-		<!--script type="text/javascript" src="./js/home.js"></script>
+		<!--script src="./meter.js"></script-->
+		<script type="text/javascript" src="./js/home.js"></script>
 		<script type="text/javascript" src="./js/slider.js"></script>
-		<script type="text/javascript" src="./js/meter.js"></script-->
+		<script type="text/javascript" src="./js/meter.js"></script>
 		<meta name="description" content="Home of Damnfine Brewing, the creation of a homebrew enthusiast, showcasing the beer recipes, label design, and passion behind the craft." />
 		<meta charset="UTF-8">
 	</head>
@@ -16,7 +16,8 @@
 	<body>
 		<div id="curtain"></div>
 	
-		<div id="magnify-back">
+		<div id="magnified">
+			<div id="magnify-back"></div>
 			<div id="magnify-window">
 				<img id="zoomed-label" src="./images/mcgbrew.svg" alt="Zoomed in label">
 				<a href="javascript:void(0);" id="unmagnify">
@@ -120,8 +121,8 @@
 					</div>
 					<div class="beerDetails" id="beerDetails0">
 						<ul class="tabs">
-							<li><a href="#recipeBox0"><div>Recipe</div></a></li>
-							<li><a href="#story0"><div>The Story</div></a></li>
+							<li><a class="recipeTab" href="#recipeBox0"><div>Recipe</div></a></li>
+							<li><a class="storyTab" href="#story0"><div>The Story</div></a></li>
 						</ul>
 						<div class="story" id="story0">
 							This is a story about a beer I made.
@@ -258,8 +259,8 @@
 					</div>
 					<div class="beerDetails" id="beerDetails1">
 						<ul class="tabs">
-							<li><a href="#recipeBox1"><div>Recipe</div></a></li>
-							<li><a href="#story1"><div>The Story</div></a></li>
+							<li><a class="recipeTab" href="#recipeBox1"><div>Recipe</div></a></li>
+							<li><a class="storyTab" href="#story1"><div>The Story</div></a></li>
 						</ul>
 						<div class="story" id="story1">
 							This is a story about a beer I made.
@@ -435,8 +436,8 @@
 					</div>
 					<div class="beerDetails" id="beerDetails2">
 						<ul class="tabs">
-							<li><a href="#recipeBox2"><div>Recipe</div></a></li>
-							<li><a href="#story2"><div>The Story</div></a></li>
+							<li><a class="recipeTab" href="#recipeBox2"><div>Recipe</div></a></li>
+							<li><a class="storyTab" href="#story2"><div>The Story</div></a></li>
 						</ul>
 						<div class="story" id="story2">
 							This is a story about a beer I made.
@@ -615,8 +616,8 @@
 					</div>
 					<div class="beerDetails" id="beerDetails3">
 						<ul class="tabs">
-							<li><a href="#recipeBox3"><div>Recipe</div></a></li>
-							<li><a href="#story3"><div>The Story</div></a></li>
+							<li><a class="recipeTab" href="#recipeBox3"><div>Recipe</div></a></li>
+							<li><a class="storyTab" href="#story3"><div>The Story</div></a></li>
 						</ul>
 						<div class="story" id="story3">
 							This is a story about a beer I made.
@@ -795,8 +796,8 @@
 					</div>
 					<div class="beerDetails" id="beerDetails4">
 						<ul class="tabs">
-							<li><a href="#recipeBox4"><div>Recipe</div></a></li>
-							<li><a href="#story4"><div>The Story</div></a></li>
+							<li><a class="recipeTab" href="#recipeBox4"><div>Recipe</div></a></li>
+							<li><a class="storyTab" href="#story4"><div>The Story</div></a></li>
 						</ul>
 						<div class="story" id="story4">
 							This is a story about a beer I made.
@@ -975,8 +976,8 @@
 					</div>
 					<div class="beerDetails" id="beerDetails5">
 						<ul class="tabs">
-							<li><a href="#recipeBox5"><div>Recipe</div></a></li>
-							<li><a href="#story5"><div>The Story</div></a></li>
+							<li><a class="recipeTab" href="#recipeBox5"><div>Recipe</div></a></li>
+							<li><a class="storyTab" href="#story5"><div>The Story</div></a></li>
 						</ul>
 						<div class="story" id="story5">
 							This is a story about a beer I made.
@@ -1102,8 +1103,8 @@
 					</div>
 					<div class="beerDetails" id="beerDetails6">
 						<ul class="tabs">
-							<li><a href="#recipeBox6"><div>Recipe</div></a></li>
-							<li><a href="#story6"><div>The Story</div></a></li>
+							<li><a class="recipeTab" href="#recipeBox6"><div>Recipe</div></a></li>
+							<li><a class="storyTab" href="#story6"><div>The Story</div></a></li>
 						</ul>
 						<div class="story" id="story6">
 							This is a story about a beer I made.
@@ -1209,8 +1210,8 @@
 					</div>
 					<div class="beerDetails" id="beerDetails7">
 						<ul class="tabs">
-							<li><a href="#recipeBox7"><div>Recipe</div></a></li>
-							<li><a href="#story7"><div>The Story</div></a></li>
+							<li><a class="recipeTab" href="#recipeBox7"><div>Recipe</div></a></li>
+							<li><a class="storyTab" href="#story7"><div>The Story</div></a></li>
 						</ul>
 						<div class="story" id="story7">
 							This is a story about a beer I made.
@@ -1408,6 +1409,5 @@
 				</div>
 			</div>
 		</div>
-		<
 	</body>
 </html>
