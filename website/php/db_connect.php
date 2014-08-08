@@ -1,0 +1,1 @@
+<?php	$db_config = parse_ini_file("db.ini");		define("HOST", $db_config[host]);	define("USER", $db_config[user]);	define("PASSWORD", $db_config[password]);	define("DATABASE", $db_config[database]);		$mysqli = new mysqli(HOST, USER, PASSWORD, DATABASE);?>

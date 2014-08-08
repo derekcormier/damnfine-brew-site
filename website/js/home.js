@@ -17,9 +17,9 @@ $(function($) {
 	const beerCount = sliderWindow.find('li').length;
 	
 // !!! TO BE REMOVED WITH AJAX CALL TO DB !!! //
-	const abv = [5.5, 6, 6.8, 6.8, 6.8, 5.2, "?", 6.8];
-	const ibu = [34, 83, 26, 26, 26, 35, "?", 52];
-	const srm = [9, 30, 25, 25, 25, 6, "?", 8];
+	//const abv = [5.5, 6, 6.8, 6.8, 6.8, 5.2, "?", 6.8];
+	//const ibu = [34, 83, 26, 26, 26, 35, "?", 52];
+	//const srm = [9, 30, 25, 25, 25, 6, "?", 8];
 	const srmColor = ["rgb(193, 136, 56)", "rgb(8, 3, 2)", "rgb(33, 19, 18)", "rgb(33, 19, 18)", "rgb(33, 19, 18)",
 		"rgb(215, 188, 52)",  "rgb(192, 121, 56)",  "rgb(198, 148, 56)"];
 	const highlightColor = ["#6b754a", "#80B3FF", "#784421", "#953532", "#9d0b0b", "#ff7f2a", "#587b45", "#db593f"];
@@ -30,6 +30,16 @@ $(function($) {
 	// Global to keep track of which label the user is on
 	previousLabelNum = 1;
 	labelNum = 0;
+	
+	// Beer info from database
+	beerInfo = {};
+	
+	$.ajax({
+		url: "./php/get_beer_info.php",
+		async:false})
+		.done( function(data){
+			beerInfo = $.parseJSON(data);
+	});
 	
 	$(window).load(function() {
 
@@ -144,9 +154,10 @@ $(function($) {
 	}
 	
 	function switchBeer() {
-		changePageHighlightColor(highlightColor[labelNum], 1000);
+		changePageHighlightColor(beerInfo[labelNum].highlight_color, 1000);
 		changeBeerColor(srmColor[labelNum], 1000);
-		changeAllMeterValues(meterWindow, abv[labelNum], ibu[labelNum], srm[labelNum]);
+		changeAllMeterValues(meterWindow, beerInfo[labelNum].abv, beerInfo[labelNum].ibu,
+			beerInfo[labelNum].srm);
 		
 		$('#beerDetails' + labelNum).css({"display":"block"});
 		$('#beerDetails' + previousLabelNum).css({"display":"none"});
