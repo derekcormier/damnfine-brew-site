@@ -25,7 +25,7 @@ function changeMeterValue(meter, newValue, valueLimit) {
 }
 
 function isMeterValueQuestionable(value) {
-	if(value == '?') {
+	if(value == null) {
 		return true;
 	} else {
 		return false;

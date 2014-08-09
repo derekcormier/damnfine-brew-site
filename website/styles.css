@@ -11,7 +11,6 @@
 body {
 	background-color:#2D2E2E;
 	font-family:"Open Sans";
-	-webkit-text-stroke: 0.3px;
 	margin:0;
 }
 
@@ -178,6 +177,7 @@ div#sidebar {
 	height: 40px;
 	font-size: 32px;
 	font-family:"Sansita One";
+	-webkit-text-stroke: 0.6px;
 	padding-left: 15px;
 	background-color: #DCDCDC;
 	line-height: 40px;
@@ -200,6 +200,7 @@ div#recent-posts {
 div#recent-posts-header {
 	background-color: #BABABA;
 	font-family: "Sansita One";
+	-webkit-text-stroke: 0.6px;
 	padding-left: 10px;
 	margin: 5px 5px 0px 5px;
 }
@@ -492,6 +493,7 @@ ul.tabs {
 	width: 200px;
 	height: 40px;
 	font-family:"Sansita One";
+	-webkit-text-stroke: 0.6px;
 	font-size: 32px;
 	background-color: #BABABA;
 	line-height: 40px;

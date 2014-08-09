@@ -1,0 +1,6 @@
+Options +FollowSymLinks
+DirectoryIndex index.html
+RewriteEngine On
+RewriteRule index.html /index.php [QSA,L]
+#RewriteRule ^([0-9]+).html /index.php?id=$1 [QSA,L]
+#RewriteRule ^place/([a-z-]*).html /index.php?id=$1 [QSA,L]

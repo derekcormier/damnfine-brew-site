@@ -34,15 +34,15 @@ $(function($) {
 	// Beer info from database
 	beerInfo = {};
 	
-	$.ajax({
-		url: "./php/get_beer_info.php",
-		async:false})
-		.done( function(data){
-			beerInfo = $.parseJSON(data);
-	});
-	
 	$(window).load(function() {
 
+		$.ajax({
+			url: "./php/get_beer_info.php",
+			async:false})
+			.done( function(data){
+				beerInfo = $.parseJSON(data);
+		});
+		
 		initializePage();
 		revealPage();
 	
