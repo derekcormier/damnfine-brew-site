@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-
-<?php include 'php/db_connect.php'; ?>
-
 <html>
 	<head>
 		<title>Damnfine Brewing</title>
@@ -30,63 +27,11 @@
 			</div>
 		</div>
 	
-		<div id="header">
-			<div id="logo-back">
-				<img id="logo" src="./images/logo.png" alt="Damnfine Brewing Logo" />
-			</div>
-		</div>
+		<?php include "./php/header.php"; ?>
 		
 		<div id="page">
 		
-			<div id="sidebar">
-				<ul>
-					<li><a href="#"><div><span>Beers</span></div></a></li>
-					<li><a href="#"><div><span>About</span></div></a></li>
-					<li><a href="#"><div><span>Contact</span></div></a></li>
-					<li><a href="#"><div><span>Blog</span></div></a></li>
-				</ul>
-				<div id="recent-posts">
-					<div id="recent-posts-header">Recent Posts</div>
-					<?php 
-						$rslt = $mysqli->query("SELECT title, DATE_FORMAT(posted_date, '%m-%d-%y %H:%i') AS posted_date, description FROM blog_post ORDER BY posted_date DESC LIMIT 3");
-						
-						$rows = array();
-						while ($r = $rslt->fetch_object()) {
-							$rows[] = array($r->title, $r->description, $r->posted_date);
-						}
-						
-						for($i = 0; $i < count($rows); $i++) {
-
-							if($i > 0) {
-								echo "<div class=\"blog-preview-divider\"></div>";
-							}
-
-							echo "<div class=\"blog-preview\">";
-							echo "<h1>{$rows[$i][0]}</h1>";
-							echo "<p>{$rows[$i][1]}</p>";
-							echo "<span>Posted: {$rows[$i][2]}</span>";
-							echo "</div>";
-						}
-					?>
-					<!--div class="blog-preview">
-						<h1>I Brewed Beer and it was So Yummy That I Made it Again</h1>
-						<p>This is what might show up in a blog post preview. It could be about something that I recently did, or maybe not. Maybe I just want to write some words here. You don't know me.</p>
-						<span>January 7, 1991</span>
-					</div>
-					<div class="blog-preview-divider"></div>
-					<div class="blog-preview">
-						<h1>Tomato beer is a terrible idea</h1>
-						<p>I made tomato beer and it tasted like garbage. So I decided to treat it as such, by trashing it. Even though it was an awful idea, I'm still glad I tried it... FOR SCIENCE!</p>
-						<span>July 4, 1776</span>
-					</div>
-					<div class="blog-preview-divider"></div>
-					<div class="blog-preview">
-						<h1>This is a poem about the wonders of meat</h1>
-						<p>I like all kinds of food. Turkey, chicken, liver too. I like my steak well done. I like my meat between a bun.</p>
-						<span>Noctober 85, 22 B.C</span>
-					</div-->
-				</div>
-			</div>
+			<?php include "./php/sidebar.php"?>
 			
 			<div id="content">
 				<div id="label-slider">
@@ -98,14 +43,19 @@
 						</div>
 					</a>
 					<ul>
-						<li><img class="slide" src="./images/mcgbrew.svg" alt="The beer label for MacGreggors's Brew Pale Ale"/></li>
-						<li><img class="slide" src="./images/lights.svg" alt="The beer label for Lights Out Black IPA"/></li>
-						<li><img class="slide" src="./images/singlec.svg" alt="The beer label for Single C Chocolate Porter"></li>
-						<li><img class="slide" src="./images/doublec.svg" alt="The beer label for Double C Chocolate Cherry Porter"></li>
-						<li><img class="slide" src="./images/triplec.svg" alt="The beer label for Triple C Chocolate Cherry Chili Porter"></li>
-						<li><img class="slide" src="./images/raven.svg" alt="The beer label for Rye Raven Rye Pale Ale"></li>
-						<li><img class="slide" src="./images/bloody.svg" alt="The beer label for Transfusion Bloody Beer"></li>
-						<li><img class="slide" src="./images/cold.svg" alt="The beer label for Cold! Refreshing! Grapefruit IPA"></li>
+						<?php 
+							$rslt = $mysqli->query("SELECT id, name, label_image FROM beers");
+								
+							$rows = array();
+							while ($r = $rslt->fetch_object()) {
+								$rows[] = array($r->label_image, $r->name);
+							}
+							
+							for($i = 0; $i < count($rows); $i++) {
+								echo "<li><img class=\"slide\" src=\"./images/{$rows[$i][0]}\" ".
+									"alt=\"The beer label for {$rows[$i][1]}\"/></li>";
+							}
+						?>
 					</ul>
 				</div>
 				<div id="beer-info">
@@ -1432,5 +1382,8 @@
 				</div>
 			</div>
 		</div>
+		
+		<?php include "./php/footer.php" ?>
+		
 	</body>
 </html>

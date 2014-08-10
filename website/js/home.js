@@ -22,9 +22,9 @@ $(function($) {
 	//const srm = [9, 30, 25, 25, 25, 6, "?", 8];
 	const srmColor = ["rgb(193, 136, 56)", "rgb(8, 3, 2)", "rgb(33, 19, 18)", "rgb(33, 19, 18)", "rgb(33, 19, 18)",
 		"rgb(215, 188, 52)",  "rgb(192, 121, 56)",  "rgb(198, 148, 56)"];
-	const highlightColor = ["#6b754a", "#80B3FF", "#784421", "#953532", "#9d0b0b", "#ff7f2a", "#587b45", "#db593f"];
-	const labelPath = ["./images/mcgbrew.svg", "./images/lights.svg", "./images/singlec.svg", "./images/doublec.svg",
-		"./images/triplec.svg", "./images/raven.svg", "./images/bloody.svg", "./images/cold.svg"];
+	//const highlightColor = ["#6b754a", "#80B3FF", "#784421", "#953532", "#9d0b0b", "#ff7f2a", "#587b45", "#db593f"];
+	//const labelPath = ["./images/mcgbrew.svg", "./images/lights.svg", "./images/singlec.svg", "./images/doublec.svg",
+	//	"./images/triplec.svg", "./images/raven.svg", "./images/bloody.svg", "./images/cold.svg"];
 // !!! TO BE REMOVED WITH AJAX CALL TO DB !!! //
 
 	// Global to keep track of which label the user is on
@@ -40,9 +40,10 @@ $(function($) {
 			url: "./php/get_beer_info.php",
 			async:false})
 			.done( function(data){
+				$('#curtain').text(data);
 				beerInfo = $.parseJSON(data);
 		});
-		
+
 		initializePage();
 		revealPage();
 	
@@ -82,7 +83,7 @@ $(function($) {
 	
 	// Clicking on the magnify button will display the label larger
 	$('a#magnify').click(function () {
-		$('#zoomed-label').attr("src", labelPath[labelNum]);
+		$('#zoomed-label').attr("src", "./images/" + beerInfo[labelNum].label_image);
 
 		$('#magnified').fadeIn(400);
 	});
@@ -155,7 +156,7 @@ $(function($) {
 	
 	function switchBeer() {
 		changePageHighlightColor(beerInfo[labelNum].highlight_color, 1000);
-		changeBeerColor(srmColor[labelNum], 1000);
+		changeBeerColor(beerInfo[labelNum].beer_color, 1000);
 		changeAllMeterValues(meterWindow, beerInfo[labelNum].abv, beerInfo[labelNum].ibu,
 			beerInfo[labelNum].srm);
 		
