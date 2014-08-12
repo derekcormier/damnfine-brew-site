@@ -11,7 +11,12 @@
 	<div id="recent-posts">
 		<div id="recent-posts-header">Recent Posts</div>
 		<?php 
-			$rslt = $mysqli->query("SELECT title, DATE_FORMAT(posted_date, '%m-%d-%y %H:%i') AS posted_date, description FROM blog_post ORDER BY posted_date DESC LIMIT 3");
+			$query = "SELECT title, DATE_FORMAT(posted_date, '%m-%d-%y %H:%i') AS posted_date, description ".
+				"FROM blog_post ".
+				"ORDER BY posted_date DESC ".
+				"LIMIT 3";
+		
+			$rslt = $mysqli->query($query);
 			
 			$rows = array();
 			while ($r = $rslt->fetch_object()) {

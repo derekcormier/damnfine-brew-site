@@ -92,7 +92,10 @@
 						<div id="beer-head-bulge"></div>
 						<img id="glass-logo" src="./images/df.svg" alt="Damnfine initials on beer glass">
 					</div>
-					<div class="beerDetails" id="beerDetails0">
+					
+					<?php include './php/beer_info_tabs.php'?>
+					
+					<!--div class="beerDetails" id="beerDetails0">
 						<ul class="tabs">
 							<li><a class="recipeTab" href="#recipeBox0"><div>Recipe</div></a></li>
 							<li><a class="storyTab" href="#story0"><div>The Story</div></a></li>
@@ -1378,7 +1381,7 @@
 								</ol>
 							</div>
 						</div>
-					</div>
+					</div-->
 				</div>
 			</div>
 		</div>
