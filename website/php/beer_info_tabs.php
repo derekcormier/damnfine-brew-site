@@ -8,6 +8,7 @@
 	$hops = array(array());
 	$yeasts = array(array());
 	$extras = array(array());
+	$steps = array(array());
 	
 	$query = "SELECT beer_id, list_order, fermentable, amount, percent ".
 			"FROM fermentables ".
@@ -51,6 +52,17 @@
 	
 	while ($r = $rslt4->fetch_object()) {
 		$extras[$r->beer_id-$beer_id_start][$r->list_order-1] = array($r->name,  $r->amount, $r->used);
+	}
+	
+	$query5 = "SELECT beer_id, list_order, step ".
+			"FROM recipe_steps ".
+			"WHERE beer_id BETWEEN " . $beer_id_start . " AND " . ($beer_id_start + $number_of_beers -1) . " " .
+			"ORDER BY beer_id, list_order";
+	
+	$rslt5 = $mysqli->query($query5);
+	
+	while ($r = $rslt5->fetch_object()) {
+		$steps[$r->beer_id-$beer_id_start][$r->list_order-1] = array($r->step);
 	}
 	
 	for($i = 0; $i < ($beer_id_start + $number_of_beers - 1); $i++) {
@@ -158,6 +170,21 @@
 		
 			if($j == (count($extras[$i]) - 1)) {
 				echo '</table>'.
+						'</div>';
+			}
+		}
+		
+		for($j = 0; $j < count($steps[$i]); $j++) {
+			if($j == 0) {
+				echo '<div class="recipeComponent brewingSteps">'.
+								'<h1>Brewing Steps</h1>'.
+								'<ol>';
+			}
+		
+			echo '<li>' . $steps[$i][$j][0] . '</li>';
+		
+			if($j == (count($steps[$i]) - 1)) {
+				echo '</ol>'.
 						'</div>';
 			}
 		}
