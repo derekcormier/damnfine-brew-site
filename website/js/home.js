@@ -15,25 +15,16 @@ $(function($) {
 	const sidebar = $('#sidebar');
 	const content = $('#content');
 	const beerCount = sliderWindow.find('li').length;
-	
-// !!! TO BE REMOVED WITH AJAX CALL TO DB !!! //
-	//const abv = [5.5, 6, 6.8, 6.8, 6.8, 5.2, "?", 6.8];
-	//const ibu = [34, 83, 26, 26, 26, 35, "?", 52];
-	//const srm = [9, 30, 25, 25, 25, 6, "?", 8];
-	const srmColor = ["rgb(193, 136, 56)", "rgb(8, 3, 2)", "rgb(33, 19, 18)", "rgb(33, 19, 18)", "rgb(33, 19, 18)",
-		"rgb(215, 188, 52)",  "rgb(192, 121, 56)",  "rgb(198, 148, 56)"];
-	//const highlightColor = ["#6b754a", "#80B3FF", "#784421", "#953532", "#9d0b0b", "#ff7f2a", "#587b45", "#db593f"];
-	//const labelPath = ["./images/mcgbrew.svg", "./images/lights.svg", "./images/singlec.svg", "./images/doublec.svg",
-	//	"./images/triplec.svg", "./images/raven.svg", "./images/bloody.svg", "./images/cold.svg"];
-// !!! TO BE REMOVED WITH AJAX CALL TO DB !!! //
 
-	// Global to keep track of which label the user is on
+	// Globals to keep track of which label the user is on
 	previousLabelNum = 1;
 	labelNum = 0;
 	
 	// Beer info from database
 	beerInfo = {};
 	
+	
+	// Do this only after all assets have loaded
 	$(window).load(function() {
 
 		$.ajax({
@@ -49,6 +40,8 @@ $(function($) {
 	
 	});
 	
+	
+	// Clicking the right button on the slider
 	$('a#slider-next').click(function () {
 		sliderNext(sliderWindow);
 		incrementLabelNumber();
@@ -56,12 +49,15 @@ $(function($) {
 		switchBeer();
 	});
 	
+	
+	// Clicking the left button on the slider
 	$('a#slider-previous').click(function () {
 		sliderPrevious(sliderWindow);
 		decrementLabelNumber();
 	
 		switchBeer();
 	});
+	
 	
 	// Ensure that when you click a tab, all the tabs change to that tab
 	$('a.recipeTab').click(function () {
@@ -72,6 +68,7 @@ $(function($) {
 		}
 	});
 	
+	
 	// Ensure that when you click a tab, all the tabs change to that tab
 	$('a.storyTab').click(function () {
 		numberOfDetails = ('.beerDetails').length;
@@ -81,6 +78,7 @@ $(function($) {
 		}
 	});
 	
+	
 	// Clicking on the magnify button will display the label larger
 	$('a#magnify').click(function () {
 		$('#zoomed-label').attr("src", "./images/" + beerInfo[labelNum].label_image);
@@ -88,22 +86,29 @@ $(function($) {
 		$('#magnified').fadeIn(400);
 	});
 	
+	
 	// Clicking on the unmagnify button will return to the page
 	$('#magnify-back').click(function () {	
 		$('#magnified').fadeOut(400);
 	});
+	
 	
 	// Clicking outside of the zoomed image will return to the page
 	$('#unmagnify').click(function () {	
 		$('#magnified').fadeOut(400);
 	});
 	
+	
+	// Only show the unmagnify button when you are hovered over the image as
+	//	not to block the image
 	$('#magnify-window').hover(function (){
 		$('#unmagnify').fadeIn(400);
 	},function(){
 		$('#unmagnify').fadeOut(400);
 	});
 	
+	// Only show the magnify button and the next/previous buttons when the
+	//	user is hovered over the slide, as not to block the image
 	$('#label-slider').hover(function (){
 		$('#slider-previous').stop();
 		$('#slider-next').stop();
@@ -130,6 +135,8 @@ $(function($) {
 		$('#magnify').fadeOut(400);
 	});
 	
+	
+	// Ready the page
 	function initializePage() {
 		initializeSlider(sliderWindow);
 		switchBeer();
@@ -142,6 +149,8 @@ $(function($) {
 		$('#beerDetails' + labelNum).css({"display":"block"});
 	}
 	
+	
+	// Make the tabs functional
 	function initializeAllBeerDetailsTabs() {
 		numberOfDetails = ('.beerDetails').length;
 		
@@ -150,10 +159,14 @@ $(function($) {
 		}
 	}
 
+	
+	// Remove the 'curtain' over the page to show the content
 	function revealPage() {
 		$('#curtain').css('display','none');
 	}
 	
+	
+	// Change the information associated with the beer
 	function switchBeer() {
 		changePageHighlightColor(beerInfo[labelNum].highlight_color, 1000);
 		changeBeerColor(beerInfo[labelNum].beer_color, 1000);
@@ -164,15 +177,22 @@ $(function($) {
 		$('#beerDetails' + previousLabelNum).css({"display":"none"});
 	}
 	
+	
+	// Change the highlight color of the page
 	function changePageHighlightColor(highlightColor, speed) {
 		header.stop().animate({'background-color':highlightColor}, speed);
 		sidebar.stop().animate({'background-color':highlightColor}, speed);
 		content.stop().animate({'background-color':highlightColor}, speed);
 	}
+	
+	
+	// Change the color of the beer in the glass
 	function changeBeerColor(beerColor, speed) {
 		$('#beer').stop().animate({'border-top-color': beerColor}, speed);
 	}
 	
+	
+	// Increment the label number, but wrap around if necessary
 	function incrementLabelNumber() {
 		previousLabelNum = labelNum;
 	
@@ -183,6 +203,8 @@ $(function($) {
 		}
 	}
 	
+	
+	// Decrement the label number, but wrap around if necessary
 	function decrementLabelNumber() {
 		previousLabelNum = labelNum;
 	

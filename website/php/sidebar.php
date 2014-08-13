@@ -29,11 +29,11 @@
 					echo "<div class=\"blog-preview-divider\"></div>";
 				}
 
-				echo "<div class=\"blog-preview\">";
-				echo "<h1>{$rows[$i][0]}</h1>";
-				echo "<p>{$rows[$i][1]}</p>";
-				echo "<span>Posted: {$rows[$i][2]}</span>";
-				echo "</div>";
+				echo "<div class=\"blog-preview\">".
+						"<h1>{$rows[$i][0]}</h1>".
+					 	"<p>{$rows[$i][1]}</p>".
+						"<span>Posted: {$rows[$i][2]}</span>".
+					"</div>";
 			}
 		?>
 	</div>

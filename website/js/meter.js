@@ -9,6 +9,8 @@ const srmLimit = 35;
 const needleOffset = 30;
 const transitionSpeedInMillis = 750;
 
+
+// Change the values on the meter
 function changeAllMeterValues(meterWindow, abv, ibu, srm) {
 	abvMeter = meterWindow.find('#abv');
 	ibuMeter = meterWindow.find('#ibu');
@@ -19,11 +21,15 @@ function changeAllMeterValues(meterWindow, abv, ibu, srm) {
 	changeMeterValue(srmMeter, srm, srmLimit);
 }
 
+
+// Change a single value on the meter
 function changeMeterValue(meter, newValue, valueLimit) {
 	moveNeedleTo(meter, newValue, valueLimit, transitionSpeedInMillis);
 	changeMeterValueTo(meter, newValue, valueLimit, transitionSpeedInMillis);
 }
 
+
+// Check if the meter value is 'questionable' (null)
 function isMeterValueQuestionable(value) {
 	if(value == '0' || value == '0.0') {
 		return true;
@@ -32,6 +38,8 @@ function isMeterValueQuestionable(value) {
 	}
 }
 
+
+// Check if the previous meter value was 'questionable' (null)
 function isLastMeterValueQuestionable(value) {
 	if(value == '??') {
 		return true;
@@ -40,6 +48,8 @@ function isLastMeterValueQuestionable(value) {
 	}
 }
 
+
+// Move the needle across the scale
 function moveNeedleTo(meter, newValue, valueLimit, transitionSpeed) {
 	meterWidth = meter.find('.scale').width();
 	
@@ -50,6 +60,8 @@ function moveNeedleTo(meter, newValue, valueLimit, transitionSpeed) {
 	meter.find('.needle').stop(true).animate({left: (meterWidth * (newValue / valueLimit) + needleOffset)}, transitionSpeed);
 }
 
+
+// Change the numeric value of the meter
 function changeMeterValueTo(meter, newValue, valueLimit, transitionSpeed) {
 	meterValueDiv = meter.find('.meter-value');
 	oldMeterValue = meterValueDiv.text();

@@ -3,6 +3,8 @@
 // Functions associated with the slider //
 //**************************************//
 
+
+// Setup the slider
 function initializeSlider(sliderWindow) {
 	slideWidth = sliderWindow.find('li').width();
 	slideHeight = sliderWindow.find('li').height();
@@ -23,6 +25,7 @@ function initializeSlider(sliderWindow) {
 	sliderWindow.find('ul li:last-child').prependTo(sliderWindow.find('ul'));
 }
 
+
 // Moves the slider to the next (right) slide
 function sliderNext(sliderWindow, slideSpeedInMillis) {
 	slideWidth = sliderWindow.find('ul li').width();
@@ -34,6 +37,7 @@ function sliderNext(sliderWindow, slideSpeedInMillis) {
 		sliderWindow.find('ul').css('left','');
 	});
 }
+
 
 // Moves the slider to the previous (left) slide
 function sliderPrevious(sliderWindow, slideSpeedInMillis) {
