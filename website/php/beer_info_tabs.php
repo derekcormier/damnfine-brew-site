@@ -4,6 +4,7 @@
 	static $beer_id_start = 1;
 	static $number_of_beers = 8;
 	
+	$beer_stories = getBeerStories($mysqli, $beer_id_start, $number_of_beers);
 	$fermentables = getFermentables($mysqli, $beer_id_start, $number_of_beers);
 	$hops = getHops($mysqli, $beer_id_start, $number_of_beers);
 	$yeasts = getYeasts($mysqli, $beer_id_start, $number_of_beers);
@@ -17,7 +18,7 @@
 					'<li><a class="storyTab" href="#story' . $i . '"><div>The Story</div></a></li>'.
 				'</ul>'.
 				'<div class="story" id="story' . $i . '">'.
-					'<p>This is a story about a beer I made.</p>'.
+					$beer_stories[$i].
 				'</div>'.
 				'<div class="recipeBox" id="recipeBox' . $i . '">';
 		
@@ -33,6 +34,23 @@
 		
 		echo 	'</div>'.
 			'</div>';
+	}
+	
+	function getBeerStories($mysqli, $beer_id_start, $number_of_beers) {
+		$returnArray = array();
+		
+		$query = "SELECT beer_id, description ".
+				"FROM beers ".
+				"WHERE beer_id BETWEEN " . $beer_id_start . " AND " . ($beer_id_start + $number_of_beers -1) . " " .
+				"ORDER BY beer_id";
+		
+		$rslt = $mysqli->query($query);
+		
+		while ($r = $rslt->fetch_object()) {
+			$returnArray[$r->beer_id-$beer_id_start] = $r->description;
+		}
+		
+		return $returnArray;
 	}
 	
 	function getFermentables($mysqli, $beer_id_start, $number_of_beers) {

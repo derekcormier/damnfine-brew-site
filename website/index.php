@@ -14,6 +14,7 @@
 	
 	<body>
 		<div id="curtain"></div>
+		<div id="background"></div>
 	
 		<div id="magnified">
 			<div id="magnify-back"></div>

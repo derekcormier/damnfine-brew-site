@@ -3,10 +3,10 @@
 
 <div id="sidebar">
 	<ul>
-		<li><a href="#"><div><span>Beers</span></div></a></li>
-		<li><a href="#"><div><span>About</span></div></a></li>
-		<li><a href="#"><div><span>Contact</span></div></a></li>
-		<li><a href="#"><div><span>Blog</span></div></a></li>
+		<li><a class="navigator" href="#"><div><span>Beers</span></div></a></li>
+		<li><a class="navigator" href="#"><div><span>About</span></div></a></li>
+		<li><a class="navigator" href="#"><div><span>Contact</span></div></a></li>
+		<li><a class="navigator" href="#"><div><span>Blog</span></div></a></li>
 	</ul>
 	<div id="recent-posts">
 		<div id="recent-posts-header">Recent Posts</div>
@@ -29,11 +29,13 @@
 					echo "<div class=\"blog-preview-divider\"></div>";
 				}
 
-				echo "<div class=\"blog-preview\">".
-						"<h1>{$rows[$i][0]}</h1>".
-					 	"<p>{$rows[$i][1]}</p>".
-						"<span>Posted: {$rows[$i][2]}</span>".
-					"</div>";
+				echo '<a href="http://www.damnfinebrew.com/blog/eggcream.html">'.
+						'<div class="blog-preview">'.
+							"<h1>{$rows[$i][0]}</h1>".
+					 		"<p>{$rows[$i][1]}</p>".
+							"<span>Posted: {$rows[$i][2]}</span>".
+						'</div>'.
+					'</a>';
 			}
 		?>
 	</div>

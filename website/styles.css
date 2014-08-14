@@ -9,7 +9,6 @@
 /***************** Page-wide *****************/
 
 body {
-	background-color:#2D2E2E;
 	font-family:"Open Sans";
 	margin:0;
 }
@@ -23,6 +22,10 @@ li {
 	list-style: none;
 }
 
+a {
+	text-decoration: none;
+}
+
 
 /***************** Curtain *****************/
 
@@ -34,6 +37,19 @@ div#curtain {
 	height:100%;
 	background-color:#DCDCDC;
 	z-index:999;
+}
+
+
+/***************** Background *****************/
+
+div#background {
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background: linear-gradient(rgb(25,25,25), rgb(80,80,80), rgb(90,90,90));
+	z-index:-999;
 }
 
 
@@ -171,7 +187,7 @@ div#sidebar {
 	margin-bottom: 0px;
 }
 
-#sidebar a div {
+a.navigator div {
 	color: black;
 	width: 275px;
 	height: 40px;
@@ -209,6 +225,7 @@ div.blog-preview {
 	margin:0px 5px 0px 5px;
 	padding: 5px 10px 5px 10px;
 	font-size: 10px;
+	color: black;
 }
 
 .blog-preview h1 {
@@ -264,7 +281,6 @@ a#slider-previous {
 	position:absolute;
 	padding: 2% 2%;
 	height: auto;
-	text-decoration:none;
 	font-weight: 600;
 	font-size: 18px;
 	color:#dcdcdc;
@@ -277,7 +293,6 @@ a#slider-next {
 	position:absolute;
 	padding: 2% 2%;
 	height: auto;
-	text-decoration:none;
 	font-weight: 600;
 	font-size: 18px;
 	color:#dcdcdc;
@@ -483,7 +498,6 @@ ul.tabs {
 }
 
 .tabs a {
-	text-decoration: none;
 	font-size: 20px;
 	outline-color: transparent;
 }
@@ -508,8 +522,21 @@ ul.tabs {
 
 div.story {
 	padding: 10px;
+	text-align: justify;
 }
 
+div.story div.caption {
+	font-size: 15px;
+	margin: 5px 0px 5px 0px;
+	width: 100%;
+	text-align: center;
+}
+
+div.story-image-divider {
+	background-color: #BABABA;
+	margin: 0px;
+	height: 2px;
+}
 
 /***************** Recipe Box *****************/
 
