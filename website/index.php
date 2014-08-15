@@ -2,12 +2,12 @@
 <html>
 	<head>
 		<title>Damnfine Brewing</title>
-		<link rel="stylesheet" type="text/css" href="./styles.css">
+		<link rel="stylesheet" type="text/css" href="http://www.damnfinebrew.com/styles.css">
 		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 		<script src="https://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
-		<script type="text/javascript" src="./js/home.js"></script>
-		<script type="text/javascript" src="./js/slider.js"></script>
-		<script type="text/javascript" src="./js/meter.js"></script>
+		<script type="text/javascript" src="http://www.damnfinebrew.com/js/home.js"></script>
+		<script type="text/javascript" src="http://www.damnfinebrew.com/js/slider.js"></script>
+		<script type="text/javascript" src="http://www.damnfinebrew.com/js/meter.js"></script>
 		<meta name="description" content="Home of Damnfine Brewing, the creation of a homebrew enthusiast, showcasing the beer recipes, label design, and passion behind the craft." />
 		<meta charset="UTF-8">
 	</head>
@@ -19,7 +19,7 @@
 		<div id="magnified">
 			<div id="magnify-back"></div>
 			<div id="magnify-window">
-				<img id="zoomed-label" src="./images/mcgbrew.svg" alt="Zoomed in label">
+				<img id="zoomed-label" src="http://www.damnfinebrew.com/images/mcgbrew.svg" alt="Zoomed in label">
 				<a href="javascript:void(0);" id="unmagnify">
 					<div>
 						<img src="./images/magglass.svg" alt="Label Magnifier">
@@ -40,7 +40,7 @@
 					<a href="javascript:void(0);" id="slider-next">&gt;&gt;</a>
 					<a href="javascript:void(0);" id="magnify">
 						<div>
-							<img src="./images/magglass.svg" alt="Label Magnifier">
+							<img src="http://www.damnfinebrew.com/images/magglass.svg" alt="Label Magnifier">
 						</div>
 					</a>
 					<ul>
@@ -53,8 +53,8 @@
 							}
 							
 							for($i = 0; $i < count($rows); $i++) {
-								echo "<li><img class=\"slide\" src=\"./images/{$rows[$i][0]}\" ".
-									"alt=\"The beer label for {$rows[$i][1]}\"/></li>";
+								echo '<li><img class="slide" src="http://www.damnfinebrew.com/images/' . $rows[$i][0] . '" '.
+									'alt="The beer label for ' . $rows[$i][1] . '"/></li>';
 							}
 						?>
 					</ul>
@@ -91,7 +91,7 @@
 						<div id="beer"></div>
 						<div id="beer-head"></div>
 						<div id="beer-head-bulge"></div>
-						<img id="glass-logo" src="./images/df.svg" alt="Damnfine initials on beer glass">
+						<img id="glass-logo" src="http://www.damnfinebrew.com/images/df.svg" alt="Damnfine initials on beer glass">
 					</div>
 					
 					<?php include './php/beer_info_tabs.php'?>
