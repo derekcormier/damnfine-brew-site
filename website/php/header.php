@@ -1,5 +1,5 @@
 <div id="header">
-	<div id="logo-back">
-		<img id="logo" src="./images/logo.png" alt="Damnfine Brewing Logo" />
-	</div>
+	<a id="logo-back" href="http://damnfinebrew.com/">
+		<img id="logo" src="http://www.damnfinebrew.com/images/logo.png" alt="Damnfine Brewing Logo" />
+	</a>
 </div>

@@ -1,5 +1,4 @@
 <?php
-	include './php/db_connect.php';
 	
 	static $beer_id_start = 1;
 	static $number_of_beers = 8;

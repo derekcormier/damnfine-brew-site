@@ -1,6 +1,3 @@
-
-<?php include 'php/db_connect.php'; ?>
-
 <div id="sidebar">
 	<ul>
 		<li><a class="navigator" href="http://www.damnfinebrew.com/"><div><span>Beers</span></div></a></li>
@@ -11,7 +8,7 @@
 	<div id="recent-posts">
 		<div id="recent-posts-header">Recent Posts</div>
 		<?php 
-			$query = "SELECT title, DATE_FORMAT(posted_date, '%m-%d-%y') AS posted_date, DATE_FORMAT(posted_date, '%m-%d-%y-%H:%i') AS url_date, description ".
+			$query = "SELECT title, DATE_FORMAT(posted_date, '%m-%d-%y') AS posted_date, DATE_FORMAT(posted_date, '%y-%m-%d-%H:%i') AS url_date, description ".
 				"FROM blog_post ".
 				"ORDER BY posted_date DESC ".
 				"LIMIT 3";

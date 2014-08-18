@@ -129,7 +129,7 @@ div#header {
 	box-shadow:#000000 0 0 10px;
 }
 
-div#logo-back {
+a#logo-back {
 	width: 200px; 
 	height: 70px; 
 	background: #dcdcdc; 
@@ -364,6 +364,41 @@ div#inner-content {
 div#inner-content p {
 	margin-left: 10px;
 	text-align: justify;
+}
+
+
+/***************** Blog *****************/
+
+h1#damnfine-blog {
+	font-family:"Sansita One";
+	font-size: 50px;
+	margin: 0px;
+}
+
+/*div.blog-divider {
+	width: 614;
+	margin: -63px -10px 0px -10px;
+	border-bottom: 7px solid #BABABA;
+	border-left: 10px solid #878787;
+	height: 50px;
+}*/
+
+div.blog-divider {
+	width: 100%;
+	margin: -13px 0px 0px 0px;
+	background: #BABABA;
+	height: 7px;
+}
+
+h1.blog-title {
+	margin: 0px;
+}
+
+h2.blog-description {
+	margin: 0px;
+	font-size: 15px;
+	font-weight: normal;
+	color: #656565;
 }
 
 
