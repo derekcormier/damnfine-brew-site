@@ -97,10 +97,10 @@
 					<?php include './php/beer_info_tabs.php'?>
 					
 				</div>
+				
+				<?php include "./php/footer.php" ?>
+				
 			</div>
 		</div>
-		
-		<?php include "./php/footer.php" ?>
-		
 	</body>
 </html>

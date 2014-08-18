@@ -125,7 +125,7 @@ div#header {
 	width:100%;
 	top:0;
 	height:50px;
-	background-color:#888888;
+	background-color:#6b754a;
 	box-shadow:#000000 0 0 10px;
 }
 
@@ -170,7 +170,7 @@ div#sidebar {
 	float:left;
 	margin:0px 20px 20px 0px;
 	width: 300px;
-	background-color:#888888;
+	background-color:#6b754a;
 	box-shadow:#000000 0 0 10px;
 }
 
@@ -263,8 +263,9 @@ div.blog-preview-divider {
 div#content {
 	margin: 70px 20px 20px 320px;
 	width:640px;
-	background-color:#888888;
+	background-color:#6b754a;
 	box-shadow:#000000 0 0 10px;
+	overflow: auto;
 }
 
 
@@ -273,7 +274,7 @@ div#content {
 div#label-slider {
 	position: relative;
 	overflow: hidden;
-	margin: 20px auto 0 auto;
+	margin: 0px;
 }
 
 a#slider-previous {
@@ -346,6 +347,23 @@ a#magnify img {
 	width: 640px;
 	background: #ccc;
 	text-align: center;
+}
+
+
+/***************** Inner Content *****************/
+
+div#inner-content {
+	position: relative;
+	display: block;
+	margin: 10px;
+	padding: 0px 10px 0px 10px;
+	overflow: auto;
+	background-color:#DCDCDC;
+}
+
+div#inner-content p {
+	margin-left: 10px;
+	text-align: justify;
 }
 
 
@@ -613,4 +631,28 @@ div.recipeComponent td {
 
 .boil-ingredient-table {
 	width: 50%;
+}
+
+
+/***************** Recipe Box Table *****************/
+
+div#footer {
+	position:relative;
+	background: #BABABA;
+	padding: 10px;
+	font-size: 12px;
+}
+
+div#footer img {
+	float: right;
+	height: 46px;
+	width: auto;
+}
+
+div#footer p:first-of-type {
+	margin-top: 0px;
+}
+
+div#footer:last-child p {
+	margin-bottom: 0px;
 }
