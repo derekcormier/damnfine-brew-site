@@ -3,6 +3,5 @@ DirectoryIndex index.php
 ErrorDocument 404 /404.php
 RewriteEngine On
 RewriteBase /
-RewriteRule ^blog/([0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}:[0-9]{2}) blog/blog.php?id=$1 [QSA,L]
-RewriteRule (.*).html /$1.php [QSA,L]
-#RewriteRule ^/blog/(.*).html /index.php [QSA,L]
+RewriteRule ^blog/([0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}:[0-9]{2}) /blog.php?id=$1 [QSA,L]
+RewriteRule ^([a-zA-Z0-9\-]+)$ /$1.php [QSA,L]

@@ -1,4 +1,4 @@
-<?php include '../php/db_connect.php'; ?>
+<?php include './php/db_connect.php'; ?>
 
 <?php
 	$query = "SELECT title, description, DATE_FORMAT(posted_date, '%M %d, %Y, %l:%i %p') AS posted_date, thumb_image, content ".
@@ -11,6 +11,11 @@
 	$r = $rslt->fetch_object();
 	$blogContent = array($r->title, $r->description, $r->posted_date, $r->thumb_image, $r->content);
 	
+	$viewsQuery = "UPDATE blog_post SET visits=visits+1 ".
+			"WHERE title='" . $blogContent[0] . "'";
+	
+	$mysqli->query($viewsQuery)
+	
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +23,7 @@
 	<head>
 		<title>Damnfine Brewing</title>
 		<link rel="stylesheet" type="text/css" href="http://www.damnfinebrew.com/styles.css">
-		<meta name="description" content="Home of Damnfine Brewing, the creation of a homebrew enthusiast, showcasing the beer recipes, label design, and passion behind the craft." />
+		<meta name="description" content="<?php echo $description ?>" />
 		<meta charset="UTF-8">
 	</head>
 	
@@ -26,15 +31,15 @@
 	
 		<div id="background"></div>
 	
-		<?php include "../php/header.php"; ?>
+		<?php include "./php/header.php"; ?>
 		
 		<div id="page">
 		
-			<?php include "../php/sidebar.php"?>
+			<?php include "./php/sidebar.php"?>
 			
 			<div id="content">
 			
-				<div id="inner-content" />
+				<div id="inner-content" >
 				
 					<h1 id="damnfine-blog">Damnfine Blog</h1>
 					
@@ -49,6 +54,7 @@
 					
 					<?php
 						echo '<h3 class="blog-date">Posted: '. $blogContent[2] . '</h3>';
+						echo ''
 					?>
 					
 					<div class="blog-divider-2"></div>
@@ -57,12 +63,12 @@
 						//if($blogContent[3] == '') {
 							echo '<img class="blog-image" src="http://www.damnfinebrew.com/images/blog/' . $blogContent[3] . '" alt="Blog Image">';
 						//}
-						echo '<p>' . $blogContent[4] . '</p>';
+						echo $blogContent[4];
 					?>
 					
 				</div>
 				
-				<?php include "../php/footer.php" ?>
+				<?php include "./php/footer.php" ?>
 				
 			</div>
 		</div>

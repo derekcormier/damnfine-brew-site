@@ -368,6 +368,10 @@ div#inner-content p {
 	font-size: 13px;
 }
 
+div#inner-content h1 {
+	margin-top: 0px;
+}
+
 
 /***************** Blog *****************/
 
