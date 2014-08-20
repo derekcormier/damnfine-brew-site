@@ -1,7 +1,7 @@
 <?php include '../php/db_connect.php'; ?>
 
 <?php
-	$query = "SELECT title, description, DATE_FORMAT(posted_date, '%m-%d-%y') AS posted_date, content ".
+	$query = "SELECT title, description, DATE_FORMAT(posted_date, '%M %d, %Y, %l:%i %p') AS posted_date, thumb_image, content ".
 		"FROM blog_post ".
 		"WHERE posted_date BETWEEN CAST('" . $_GET["id"] . ":00' AS DATETIME) AND CAST('" . $_GET["id"] . ":59' AS DATETIME) ".
 		"LIMIT 1";
@@ -9,7 +9,7 @@
 	$rslt = $mysqli->query($query);
 	
 	$r = $rslt->fetch_object();
-	$blogContent = array($r->title, $r->description, $r->posted_date, $r->content);
+	$blogContent = array($r->title, $r->description, $r->posted_date, $r->thumb_image, $r->content);
 	
 ?>
 
@@ -43,7 +43,21 @@
 					<?php 
 						echo '<h1 class="blog-title">' . $blogContent[0] . '</h1>';
 						echo '<h2 class="blog-description">' . $blogContent[1] . '</h2>';
-						echo '<p>' . $blogContent[3] . '</p>';
+					?>
+					
+					<div class="blog-divider-2"></div>
+					
+					<?php
+						echo '<h3 class="blog-date">Posted: '. $blogContent[2] . '</h3>';
+					?>
+					
+					<div class="blog-divider-2"></div>
+					
+					<?php
+						//if($blogContent[3] == '') {
+							echo '<img class="blog-image" src="http://www.damnfinebrew.com/images/blog/' . $blogContent[3] . '" alt="Blog Image">';
+						//}
+						echo '<p>' . $blogContent[4] . '</p>';
 					?>
 					
 				</div>

@@ -2,7 +2,7 @@
 	<ul>
 		<li><a class="navigator" href="http://www.damnfinebrew.com/"><div><span>Beers</span></div></a></li>
 		<li><a class="navigator" href="#"><div><span>About</span></div></a></li>
-		<li><a class="navigator" href="#"><div><span>Contact</span></div></a></li>
+		<li><a class="navigator" href="http://www.damnfinebrew.com/contact.html"><div><span>Contact</span></div></a></li>
 		<li><a class="navigator" href="#"><div><span>Blog</span></div></a></li>
 	</ul>
 	<div id="recent-posts">

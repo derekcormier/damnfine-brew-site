@@ -22,7 +22,23 @@
 			<div id="content">
 			
 				<div id="inner-content" />
-					DAT CONTENT DOE
+					<h1>Contact Me</h1>
+					<h2>Feel free to contact me with any questions, comments, or suggestions!</h2>
+					<form method="post" action="./php/email_me.php">
+						<div class="contact-label">Subject:</div> 
+						<input type="text" name="subject">
+						<br>
+						
+						<div class="contact-label">From email:</div>
+						<input type="email" name="email">
+						<br>
+						
+						<div class="contact-label">Body:</div>
+						<textarea class="contact-body" columns="300" rows="6" name="body"></textarea>
+						<br>
+						
+						<button type="submit" value="Submit">Send</button>
+					</form>
 				</div>
 				
 				<?php include "./php/footer.php" ?>

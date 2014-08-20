@@ -363,7 +363,9 @@ div#inner-content {
 
 div#inner-content p {
 	margin-left: 10px;
+	margin-right: 10px;
 	text-align: justify;
+	font-size: 13px;
 }
 
 
@@ -372,16 +374,8 @@ div#inner-content p {
 h1#damnfine-blog {
 	font-family:"Sansita One";
 	font-size: 50px;
-	margin: 0px;
+	margin: 7px 0px 0px 0px;
 }
-
-/*div.blog-divider {
-	width: 614;
-	margin: -63px -10px 0px -10px;
-	border-bottom: 7px solid #BABABA;
-	border-left: 10px solid #878787;
-	height: 50px;
-}*/
 
 div.blog-divider {
 	width: 100%;
@@ -390,15 +384,32 @@ div.blog-divider {
 	height: 7px;
 }
 
-h1.blog-title {
+div.blog-divider-2 {
+	width: 100%;
 	margin: 0px;
+	background: #BABABA;
+	height: 1px;
+}
+
+h1.blog-title {
+	margin: 7px 0px 0px 0px;
 }
 
 h2.blog-description {
-	margin: 0px;
-	font-size: 15px;
+	margin: 0px 0px 8px 0px;
+	font-size: 12px;
 	font-weight: normal;
 	color: #656565;
+}
+
+h3.blog-date {
+	margin: 0px 0px 0px 0px;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+img.blog-image {
+	margin-top: 10px;
 }
 
 
@@ -690,4 +701,19 @@ div#footer p:first-of-type {
 
 div#footer:last-child p {
 	margin-bottom: 0px;
+}
+
+
+/***************** Contact *****************/
+
+div.contact-label {
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	vertical-align: top;
+}
+
+textarea.contact-body {
+	width: 460px;
+	height: 200px;
 }
