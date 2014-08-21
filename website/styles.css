@@ -710,6 +710,11 @@ div#footer:last-child p {
 
 /***************** Contact *****************/
 
+p.contact-error {
+	color: red;
+	font-size: 20px;
+}
+
 div.contact-label {
 	display: inline-block;
 	width: 100px;
