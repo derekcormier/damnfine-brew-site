@@ -19,7 +19,7 @@
 		
 			<?php include "./php/sidebar.php"?>
 			
-			<div id="content">
+			<div id="content" class="highlighted-color">
 			
 				<div id="inner-content" />
 					DAT CONTENT DOE

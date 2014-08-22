@@ -1,4 +1,4 @@
-<div id="sidebar">
+<div id="sidebar" class="highlighted-color">
 	<ul>
 		<li><a class="navigator" href="http://www.damnfinebrew.com/"><div><span>Beers</span></div></a></li>
 		<li><a class="navigator" href="#"><div><span>About</span></div></a></li>

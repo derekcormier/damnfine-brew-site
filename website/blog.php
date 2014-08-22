@@ -25,6 +25,7 @@
 		<link rel="stylesheet" type="text/css" href="http://www.damnfinebrew.com/styles.css">
 		<meta name="description" content="<?php echo $description ?>" />
 		<meta charset="UTF-8">
+		<?php include './php/set_highlight_color.php'; ?>
 	</head>
 	
 	<body>
@@ -37,7 +38,7 @@
 		
 			<?php include "./php/sidebar.php"?>
 			
-			<div id="content">
+			<div id="content" class="highlighted-color">
 			
 				<div id="inner-content" >
 				

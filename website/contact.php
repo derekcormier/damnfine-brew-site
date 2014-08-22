@@ -7,6 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="http://www.damnfinebrew.com/styles.css">
 		<meta name="description" content="Home of Damnfine Brewing, the creation of a homebrew enthusiast, showcasing the beer recipes, label design, and passion behind the craft." />
 		<meta charset="UTF-8">
+		<?php include './php/set_highlight_color.php'; ?>
 		<script type="text/javascript">
 			function checkContactInput () {
 				subject = document.getElementById('subject').value;
@@ -38,7 +39,7 @@
 		
 			<?php include "./php/sidebar.php"?>
 			
-			<div id="content">
+			<div id="content" class="highlighted-color">
 			
 				<div id="inner-content" >
 					<h1>Contact Me</h1>

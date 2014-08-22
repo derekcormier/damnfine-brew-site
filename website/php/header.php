@@ -1,5 +1,5 @@
-<div id="header">
+<div id="header" class="highlighted-color">
 	<a id="logo-back" href="http://damnfinebrew.com/">
-		<img id="logo" src="http://www.damnfinebrew.com/images/logo.png" alt="Damnfine Brewing Logo" />
+		<img id="logo" src="http://www.damnfinebrew.com/images/logo.svg" alt="Damnfine Brewing Logo" />
 	</a>
 </div>

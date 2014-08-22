@@ -36,7 +36,7 @@
 		
 			<?php include "./php/sidebar.php"?>
 			
-			<div id="content">
+			<div id="content" class="highlighted_color">
 				<div id="label-slider">
 					<a href="javascript:void(0);" id="slider-previous">&lt;&lt;</a>
 					<a href="javascript:void(0);" id="slider-next">&gt;&gt;</a>

@@ -26,6 +26,9 @@ a {
 	text-decoration: none;
 }
 
+.highlighted-color {
+	background-color:#6b754a;
+}
 
 /***************** Curtain *****************/
 
@@ -125,7 +128,6 @@ div#header {
 	width:100%;
 	top:0;
 	height:50px;
-	background-color:#6b754a;
 	box-shadow:#000000 0 0 10px;
 }
 
@@ -170,7 +172,6 @@ div#sidebar {
 	float:left;
 	margin:0px 20px 20px 0px;
 	width: 300px;
-	background-color:#6b754a;
 	box-shadow:#000000 0 0 10px;
 }
 
@@ -263,7 +264,6 @@ div.blog-preview-divider {
 div#content {
 	margin: 70px 20px 20px 320px;
 	width:640px;
-	background-color:#6b754a;
 	box-shadow:#000000 0 0 10px;
 	overflow: auto;
 }
