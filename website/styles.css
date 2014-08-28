@@ -374,21 +374,48 @@ div#inner-content h1 {
 
 /***************** Blog *****************/
 
+div.blog-list-item {
+	position: relative;
+	overflow: auto;
+	height: auto;
+	margin: 0px;
+	padding: 3px 0px 3px 0px;
+}
+
 img.blog-list-image {
-	display: block;	
-	width: 30%;
+	float: left;
+	width: 25%;
+	margin: 0px 10px 0px 0px;
 }
 
 h1.blog-list-title {
-	width: 70%;
+	margin: 7px 0px 0px 0px;
+}
+
+h1.blog-list-title a {
+	color: black;
 }
 
 h2.blog-list-description {
-	width: 70%;
+	margin: 0px 0px 8px 0px;
+	font-size: 16px;
+	font-weight: normal;
+	color: #656565;
+	line-height: 125%;
 }
 
-p.blog-list-content-preview {
-	
+p.blog-list-date {
+	position: absolute;
+	bottom: 3px;
+	right: 3px;
+	margin: 0px;
+}
+
+div.blog-list-divider {
+	width: 100%;
+	margin: 0px;
+	background: #BABABA;
+	height: 4px;
 }
 
 

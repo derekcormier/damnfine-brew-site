@@ -10,7 +10,11 @@
 		$highlightColor = $r->highlight_color;
 	}
 	
-	echo '<STYLE type="text/css">'.
+	echo '<style type="text/css">'.
 			'.highlighted-color {background-color:' . $highlightColor . '}'.
-		'</STYLE>';
+			'a.navigator:hover>div>span {color:' . $highlightColor . '}'.
+			'a.blog-preview-link:hover>div>h1 {color:' . $highlightColor . '}'.
+			'a.recipeTab:hover>div {color:' . $highlightColor . '}'.
+			'a.storyTab:hover>div {color:' . $highlightColor . '}'.
+		'</style>';
 ?>

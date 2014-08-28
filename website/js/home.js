@@ -214,4 +214,37 @@ $(function($) {
 			labelNum = (beerCount - 1);
 		}
 	}
+	
+	
+	// Change the text to the highlight color when hovering over it
+	$('a.navigator').hover(function (){
+		$(this).find('div').css({color:beerInfo[labelNum].highlight_color});
+	},function(){
+		$(this).find('div').css({'color':'black'});
+	});
+	
+	
+	// Change the text to the highlight color when hovering over it
+	$('a.blog-preview-link').hover(function (){
+		$(this).find('div>h1').css({color:beerInfo[labelNum].highlight_color});
+	},function(){
+		$(this).find('div>h1').css({'color':'black'});
+	});
+	
+	
+	// Change the text to the highlight color when hovering over it
+	$('a.recipeTab').hover(function (){
+		$(this).find('div').css({color:beerInfo[labelNum].highlight_color});
+	},function(){
+		$(this).find('div').css({'color':'black'});
+	});
+	
+	
+	// Change the text to the highlight color when hovering over it
+	$('a.storyTab').hover(function (){
+		$(this).find('div').css({color:beerInfo[labelNum].highlight_color});
+	},function(){
+		$(this).find('div').css({'color':'black'});
+	});
+	
 });
