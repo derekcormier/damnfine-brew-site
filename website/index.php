@@ -1,4 +1,7 @@
-<?php include './php/db_connect.php'; ?>
+<?php 
+	include './php/db_connect.php';
+	include './php/parsedown/Parsedown.php'; 
+?>
 
 <!DOCTYPE html>
 <html>

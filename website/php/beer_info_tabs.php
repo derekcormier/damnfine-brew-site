@@ -1,5 +1,4 @@
 <?php
-	
 	static $beer_id_start = 1;
 	static $number_of_beers = 8;
 	
@@ -45,8 +44,12 @@
 		
 		$rslt = $mysqli->query($query);
 		
+		$Parsedown = new Parsedown();
+		
 		while ($r = $rslt->fetch_object()) {
-			$returnArray[$r->beer_id-$beer_id_start] = $r->description;
+			$textToParse = (string)$r->description;
+			$parsedText = $Parsedown->text($textToParse);
+			$returnArray[$r->beer_id-$beer_id_start] = $parsedText;
 		}
 		
 		return $returnArray;

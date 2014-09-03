@@ -1,5 +1,5 @@
 <?php 
-	include './php/parsedown/Parsedown.php';
+	include './parsedown/Parsedown.php';
 
 	$parseThis = "#Welcome to my parse demo\n".
 			"\n".

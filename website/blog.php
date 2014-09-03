@@ -1,4 +1,7 @@
-<?php include './php/db_connect.php'; ?>
+<?php 
+	include './php/db_connect.php';
+	include './php/parsedown/Parsedown.php';
+?>
 
 <?php
 	$query = "SELECT title, description, DATE_FORMAT(posted_date, '%M %d, %Y, %l:%i %p') AS posted_date, thumb_image, content ".
@@ -41,31 +44,36 @@
 			<div id="content" class="highlighted-color">
 			
 				<div id="inner-content" >
+					
+					<div id="blog-content">
 				
-					<h1 id="damnfine-blog">Damnfine Blog</h1>
+						<h1 id="damnfine-blog">Damnfine Blog</h1>
+						
+						<div class="blog-divider"></div>
+						
+						<?php 
+							echo '<h1 class="blog-title">' . $blogContent[0] . '</h1>';
+							echo '<h2 class="blog-description">' . $blogContent[1] . '</h2>';
+						?>
+						
+						<div class="blog-divider-2"></div>
+						
+						<?php
+							echo '<h3 class="blog-date">Posted: '. $blogContent[2] . '</h3>';
+							echo ''
+						?>
+						
+						<div class="blog-divider-2"></div>
+						
+						<?php
+							$Parsedown = new Parsedown();
+						
+								echo '<img class="blog-image" src="http://www.damnfinebrew.com/images/blog/' . $blogContent[3] . '" alt="Blog Image">';
+	
+							echo $Parsedown->text($blogContent[4]);
+						?>
 					
-					<div class="blog-divider"></div>
-					
-					<?php 
-						echo '<h1 class="blog-title">' . $blogContent[0] . '</h1>';
-						echo '<h2 class="blog-description">' . $blogContent[1] . '</h2>';
-					?>
-					
-					<div class="blog-divider-2"></div>
-					
-					<?php
-						echo '<h3 class="blog-date">Posted: '. $blogContent[2] . '</h3>';
-						echo ''
-					?>
-					
-					<div class="blog-divider-2"></div>
-					
-					<?php
-						//if($blogContent[3] == '') {
-							echo '<img class="blog-image" src="http://www.damnfinebrew.com/images/blog/' . $blogContent[3] . '" alt="Blog Image">';
-						//}
-						echo $blogContent[4];
-					?>
+					</div>
 					
 				</div>
 				
