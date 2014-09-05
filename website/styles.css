@@ -496,7 +496,7 @@ div.blog-comment-divider-2 {
 
 div.comment {
 	padding: 5px;
-	overflow: auto;
+	overflow: hidden;
 	background: rgba(100,100,100,0.3);
 }
 
