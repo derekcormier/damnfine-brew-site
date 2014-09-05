@@ -43,11 +43,11 @@ WHERE id=5;
 
 
 INSERT INTO blog_post (title, posted_date, description, thumb_image, content, visits)
-VALUES ('Multi-Step Infusion With a Mash Tun', NOW(), 'For those limited to using a cooler for mashing, here\'s how to do multi-step infusion', 'mashtun.png', 'Recently, I decided I was going to make brew a weisenbock. The recipe I created required the use of quite a bit of wheat malt. A brewer recommended that I try a protein rest to ensure my efficiency was high enough to meet my desired O.G.
+VALUES ('Multi-Step Infusion With a Mash Tun', NOW(), 'For those limited to using a cooler for mashing, here\'s how to do multi-step infusion', 'mashtun.png', 'Recently, I decided I was going to make brew a weizenbock. The recipe I created required the use of quite a bit of wheat malt. A brewer recommended that I try a protein rest to ensure my efficiency was high enough to meet my desired O.G.
 
 For those who are unaware, protein rest requires a fairly low mash temperature as compared to saccharification rest. If you are like me, and use a cooler for mashing, it\'s not easy to heat your mash from protein rest temperature to saccharification rest temperature, unlike using a keggle on a burner.
 
-Some people get around this issue by pouring the entire contents of their mash tun into a kettle and heat it, returning to their mash tun when it\'s the right temperature. I am a super klutz, so the thought of getting hot sticky wort all over me made this a less-than-ideal option for me. Instead, I stumbled upon [John Palmer\'s How to Brew - Chapter 16.3 - Calculations for Boiling Water Additions]. Here, Palmer explains how to calculate the amount and temperature of water to add to your mash to bring it to the proper temperature
+Some people get around this issue by pouring the entire contents of their mash tun into a kettle and heat it, returning to their mash tun when it\'s the right temperature. I am a super klutz, so the thought of getting hot sticky wort all over me made this a less-than-ideal option for me. Instead, I stumbled upon [John Palmer\'s How to Brew - Chapter 16.3 - Calculations for Boiling Water Additions](http://www.howtobrew.com/section3/chapter16-3.html). Here, Palmer explains how to calculate the amount and temperature of water to add to your mash to bring it to the proper temperature
 
 The equations that Palmer references are fairly simple to use:
 
@@ -61,39 +61,45 @@ The equations that Palmer references are fairly simple to use:
         Tw = Strike water temperature
         Wa = Amount of water to add in quarts
         Wm = Total amount of water already in the mash in quarts
-        T1 = Initial temperature in &deg;F of the mash
-        T2 = Target temperature in &deg;F of the mash
+        T1 = Initial temperature in degrees F of the mash
+        T2 = Target temperature in degrees F of the mash
         G = Amount of grain in the mash in lbs.
         r = Ratio of water to grain in the mash (in quarts/lb.)
 
 I applied these equations to my mash schedule:
 
-1. Protein Rest for 30 minutes @ 130&deg;F
-2. Saccharification Rest for 60 minutes @ 152&deg;F
-3. Batch Sparge @ 170&deg;F
+1. Protein Rest for 30 minutes @ 130
+2. Saccharification Rest for 60 minutes @ 152
+3. Batch Sparge @ 170
+
+## Strike Water Temperature Calculation
 
 First, to calculate the strike water temperature, you need to choose what your water to grain ratio will be (everything else, you should already know). For my purposes, I chose to have a 1.5 quarts/lb ratio for protein rest.
 
     Tw = ?
     r = 1.5
-    T2 = 130&deg;F
-    T1 = 70&deg;F (grain at room temperature)
+    T2 = 130
+    T1 = 70 (grain at room temperature)
     
     Initial Infusion:
     Tw = (.2/r)(T2 - T1) + T2
     Tw = (.2/1.25)(130 - 70) + 130
     Tw = (0.16)(60) + 130
     Tw = 9.6 + 130
-    Tw = 139.6&deg;F
+    Tw = 139.6
 
-Since I knew I had 12 lbs. of grain, and my water to grain ratio is 1.25, we know that I need 15 quarts or 3.75 gallons of water at 138&deg;F. Now comes the more difficult part, bringing the mash temperature up to saccharification rest temperature. In order to do this, we are going to use the second equation given by Palmer:
+Since I knew I had 12 lbs. of grain, and my water to grain ratio is 1.25, we know that I need 15 quarts or 3.75 gallons of water at 138&deg;F. 
+
+## Second Infusion Boiling Water Volume
+
+Now comes the more difficult part, bringing the mash temperature up to saccharification rest temperature. In order to do this, we are going to use the second equation given by Palmer:
 
     Wa = ?
-    T2 = 152&deg;F
-    T1 = 130&deg;F
+    T2 = 152
+    T1 = 130
     G = 12 lbs.
     Wm = 18 quarts
-    Tw = 210&deg;F (just below boiling)
+    Tw = 210 (just below boiling)
     
     Mash Infusion:
     Wa = (T2 - T1)(.2G + Wm)/(Tw - T2)
@@ -103,7 +109,11 @@ Since I knew I had 12 lbs. of grain, and my water to grain ratio is 1.25, we kno
     Wa = 448.8/58
     Wa = 7.74 quarts
 
-So, in order to bring the mash to 152&deg;F, I need to add 7.74 quarts or 1.94 gallons of near-boiling hot water to the mash. Now, we need to find out how much water we need to add to get our desired pre-boil volume. This is a much more common sense equation that I\'m smart enough to figure out:
+So, in order to bring the mash to 152&deg;F, I need to add 7.74 quarts or 1.94 gallons of near-boiling hot water to the mash. 
+
+## Sparge Water Volume
+
+Now, we need to find out how much water we need to add to get our desired pre-boil volume. This is a much more common sense equation that I\'m hopefully smart enough to figure out:
 
 	Initial Infusion:
     Ws = Vp - (Wm - (Vds + (G * Ag)))
@@ -133,4 +143,15 @@ Using the known values for my situation:
     Ws = 20 - 14.74
     Ws = 5.26 quarts
     
-So, for sparge, we\'ll add 5.26 quarts, or 1.32 gallons of water at 170&deg;F. That\'s it! Be sure to double-check your work!', 0);
+So, for sparge, we\'ll add 5.26 quarts, or 1.32 gallons of water at 170&deg;F.
+
+## Our hard work pays off!
+
+So, to summarize the calculations:
+
+1. Add 3.75 gallons of water at 138&deg;F for the first infusion
+2. Add 1.94 gallons of near-boiling water for the second infusion
+3. Collect first runnings
+4. Add 1.32 gallons of water at 170&deg;F for sparge
+
+That\'s it! Be sure to double-check your work! Better to spend a little more time to get it right the first time.', 0);
