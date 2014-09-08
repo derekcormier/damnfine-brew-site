@@ -7,6 +7,8 @@ CREATE TABLE beers (
 	abv DECIMAL(2,1),
 	ibu SMALLINT,
 	srm TINYINT,
+	o_g DECIMAL(3,3),
+	f_g DECIMAL(3,3),
 	highlight_color VARCHAR(7) NOT NULL,
 	description VARCHAR(10000) NOT NULL,
 	PRIMARY KEY( id )

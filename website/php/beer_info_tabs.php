@@ -13,7 +13,7 @@
 		echo '<div class="beerDetails" id="beerDetails' . $i . '">'.
 				'<ul class="tabs">'.
 					'<li><a class="recipeTab" href="#recipeBox' . $i . '"><div>Recipe</div></a></li>'.
-					'<li><a class="storyTab" href="#story' . $i . '"><div>The Story</div></a></li>'.
+					'<li><a class="storyTab" href="#story' . $i . '"><div>About</div></a></li>'.
 				'</ul>'.
 				'<div class="story" id="story' . $i . '">'.
 					$beer_stories[$i].
