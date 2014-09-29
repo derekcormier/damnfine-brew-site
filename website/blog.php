@@ -24,7 +24,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Damnfine Brewing</title>
+		<title><?php echo $blogContent[1]; ?> - Damnfine Brewing</title>
 		<link rel="stylesheet" type="text/css" href="http://www.damnfinebrew.com/styles.css">
 		<meta name="description" content="<?php echo $description; ?>" />
 		<meta charset="UTF-8">
