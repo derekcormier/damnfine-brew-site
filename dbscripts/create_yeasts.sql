@@ -57,3 +57,9 @@ VALUES (7, 1, 'Ale Yeast', 'Yes', 'Cellular');
 
 INSERT INTO yeasts (beer_id, list_order, name, company, style)
 VALUES (8, 1, 'California Ale Yeast WLP001', 'White Labs', 'Liquid');
+
+
+# Penny Weize Lb. Foolish
+
+INSERT INTO yeasts (beer_id, list_order, name, company, style)
+VALUES (9, 1, 'Bavarian Wheat Blend 3056', 'Wyeast', 'Liquid');

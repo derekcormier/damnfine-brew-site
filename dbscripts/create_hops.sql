@@ -116,3 +116,12 @@ VALUES (8, 7, 'Cascade', '0.4 oz.', 'Pellet', '7 days', 'Dry Hop');
 
 INSERT INTO hops (beer_id, list_order, hop, amount, style, timing, used)
 VALUES (8, 8, 'Simcoe', '0.4 oz.', 'Pellet', '7 days', 'Dry Hop');
+
+
+# Penny Weize Lb. Foolish
+
+INSERT INTO hops (beer_id, list_order, hop, amount, style, timing, used)
+VALUES (9, 1, 'Perle', '0.8 oz.', 'Pellet', '60 mins.', 'Boil');
+
+INSERT INTO hops (beer_id, list_order, hop, amount, style, timing, used)
+VALUES (9, 2, 'Hallertau', '0.4 oz.', 'Pellet', '5 mins.', 'Boil');

@@ -1,6 +1,6 @@
 <?php
 	static $beer_id_start = 1;
-	static $number_of_beers = 8;
+	static $number_of_beers = 9;
 	
 	$beer_stories = getBeerStories($mysqli, $beer_id_start, $number_of_beers);
 	$fermentables = getFermentables($mysqli, $beer_id_start, $number_of_beers);

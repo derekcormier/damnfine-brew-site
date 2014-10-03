@@ -1,9 +1,8 @@
 <div id="sidebar" class="highlighted-color">
 	<ul>
 		<li><a class="navigator" href="http://www.damnfinebrew.com/"><div><span>Beers</span></div></a></li>
-		<li><a class="navigator" href="#"><div><span>About</span></div></a></li>
-		<li><a class="navigator" href="http://www.damnfinebrew.com/contact"><div><span>Contact</span></div></a></li>
 		<li><a class="navigator" href="http://www.damnfinebrew.com/blog-post-list"><div><span>Blog</span></div></a></li>
+		<li><a class="navigator" href="http://www.damnfinebrew.com/contact"><div><span>Contact</span></div></a></li>
 	</ul>
 	<div id="recent-posts">
 		<div id="recent-posts-header">Recent Posts</div>

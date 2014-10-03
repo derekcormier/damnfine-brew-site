@@ -105,3 +105,15 @@ VALUES (8, 3, 'Carapils', '8 oz.', 3);
 
 INSERT INTO fermentables (beer_id, list_order, fermentable, amount, percent)
 VALUES (8, 4, 'Victory', '8 oz.', 3);
+
+
+# Penny Weize Lb. Foolish
+
+INSERT INTO fermentables (beer_id, list_order, fermentable, amount, percent)
+VALUES (9, 1, 'Wheat Malt', '6.5 lbs.', 53);
+
+INSERT INTO fermentables (beer_id, list_order, fermentable, amount, percent)
+VALUES (9, 2, 'Dark Munich', '5 lbs.', 41);
+
+INSERT INTO fermentables (beer_id, list_order, fermentable, amount, percent)
+VALUES (9, 3, 'CaraMunich', '10 oz.', 5);

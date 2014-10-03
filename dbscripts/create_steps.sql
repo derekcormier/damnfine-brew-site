@@ -206,3 +206,30 @@ VALUES (8, 7, 'After fermenting for 7 days, add 0.4 oz. of Amarillo hops, 0.4 oz
 
 INSERT INTO recipe_steps (beer_id, list_order, step)
 VALUES (8, 8, 'After fermenting for two weeks total, keg beer or bottle beer with priming sugar.');
+
+
+# Penny Weize Lb. Foolish
+
+INSERT INTO recipe_steps (beer_id, list_order, step)
+VALUES (9, 1, 'Using a mash tun, do a protein rest with 130&deg; water for 30 minutes.'); 
+
+INSERT INTO recipe_steps (beer_id, list_order, step)
+VALUES (9, 2, 'Raise the temperature of the mash to 152&deg; and mash for 60 more minutes.');
+
+INSERT INTO recipe_steps (beer_id, list_order, step)
+VALUES (9, 3, 'While Mashing, heat sparge water to 170&deg;.');
+
+INSERT INTO recipe_steps (beer_id, list_order, step)
+VALUES (9, 4, 'Vorlauf until wort runs fairly clear of debris. Empty runnings into kettle.');
+
+INSERT INTO recipe_steps (beer_id, list_order, step)
+VALUES (9, 5, 'Add all sparge water to the mash tun and mix the grain. Vorlauf immediately until wort runs fairly clear of debris. Empty runnings into kettle.');
+
+INSERT INTO recipe_steps (beer_id, list_order, step)
+VALUES (9, 6, 'Follow the Boil Schedule:<table><tr><th  class="boil-ingredient-table">Ingredient</th><th >Amount</th><th >Time</th></tr><tr><td>Perle Hops</td><td>0.8 oz.</td><td>60 mins.</td></tr><tr><td>Hallertau Hops</td><td>0.4 oz.</td><td>5 mins.</td></tr></table>');
+
+INSERT INTO recipe_steps (beer_id, list_order, step)
+VALUES (9, 7, 'Remove wort from heat and cool to about 70&deg;. Transfer wort into fermenter. Pitch the yeast and stir thoroughly. Close the fermenter and use airlock.');
+
+INSERT INTO recipe_steps (beer_id, list_order, step)
+VALUES (9, 8, 'After fermenting for a week total, bottle beer with priming sugar.');

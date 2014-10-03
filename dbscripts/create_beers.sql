@@ -38,7 +38,9 @@ INSERT INTO beers (name, label_image, abv, ibu, srm, highlight_color, descriptio
 # Cold! Refreshing! Grapefruit IPA
 INSERT INTO beers (name, label_image, abv, ibu, srm, highlight_color, description) VALUES ('Cold! Refreshing! Grapefruit IPA', 'cold.svg', 6.8, 52, 8, '#db593f', 'A classic IPA style with a hint of grapefruit flavor, ');
 
-
+# Penny Weize Lb. Foolish
+INSERT INTO beers (beer_id, name, label_image, abv, ibu, srm, highlight_color, description) 
+VALUES (9, 'Penny Weize, Lb. Foolish', 'penny.svg', 6, 23, 14, '#c26938', 'A near-sessionable Weizenbock with strong banana-like phenol flavor.');
 
 
 UPDATE beers SET description='MacGreggor\'s Brew was a long time coming. The idea came about after a long night of partaking in beverages, jamming, and reminiscing with good friends in the usual haunt: MacGreggor\'s.

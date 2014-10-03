@@ -155,3 +155,18 @@ So, to summarize the calculations:
 4. Add 1.32 gallons of water at 170&deg;F for sparge
 
 That\'s it! Be sure to double-check your work! Better to spend a little more time to get it right the first time.', 0);
+
+
+
+INSERT INTO blog_post (title, posted_date, description, thumb_image, content, visits)
+VALUES ('MacGreggor\'s Brew is back: Fall Edition', NOW(), 'We\'re bringing a little fall flavor to the table with MacGreggor\'s Brew: Fall Classic', 'squash.png', 'It seems like every brewery these days are riding the pumpkin beer gravy train, and everyone, including myself seems to love it. I admit, I want a peice of that action. This is where Fall Classic comes in.
+
+Co-Brewer Curt Ege and I were enjoying a glass of Harpoon Imperial Pumpkin and a pint of Harpoon Pumpkin Cider at the Harpoon Beer Hall (you're welcome Harpoon, for the plug), respectively, discussing the pumpkin beer craze. We wanted to brew a fall beer that wasn\'t the stereotypical pumpkin ale. It\'s overdone. But what other fall flavor could we leverage?'
+
+Butternut squash.
+
+We talked it over with one of the brewers at Harpoon, and he thought it was a great idea. He actually told us that many of the commercial pumpkin beers he knew of (or had helped brew) actually used butternut squash in place of some/all of pumpkin in their pumpkin beers. He said that they have more flavor and sweetness than pumpkin.
+
+We were kind of surprised, but we decided to do it anyway. Why not.
+
+The recipe started as a cinnamon butternut sort of flavor... but it quickly transitioned into a butternut pumpkin spice beer. Okay, we basically made a pumpkin beer. So much for something new.', 0);
