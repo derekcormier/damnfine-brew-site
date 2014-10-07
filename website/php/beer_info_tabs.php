@@ -16,19 +16,19 @@
 					'<li><a class="storyTab" href="#story' . $i . '"><div>About</div></a></li>'.
 				'</ul>'.
 				'<div class="story" id="story' . $i . '">'.
-					$beer_stories[$i].
+					$beer_stories[$number_of_beers-$i-1].
 				'</div>'.
 				'<div class="recipeBox" id="recipeBox' . $i . '">';
 		
-		writeFermentables($fermentables, $i);
+		writeFermentables($fermentables, $number_of_beers-$i-1);
 		
-		writeHops($hops, $i);
+		writeHops($hops, $number_of_beers-$i-1);
 		
-		writeYeasts($yeasts, $i);
+		writeYeasts($yeasts, $number_of_beers-$i-1);
 		
-		writeExtras($extras, $i);
+		writeExtras($extras, $number_of_beers-$i-1);
 		
-		writeSteps($steps, $i);
+		writeSteps($steps, $number_of_beers-$i-1);
 		
 		echo 	'</div>'.
 			'</div>';

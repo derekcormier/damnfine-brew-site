@@ -50,7 +50,7 @@
 					</a>
 					<ul>
 						<?php 
-							$rslt = $mysqli->query("SELECT id, name, label_image FROM beers");
+							$rslt = $mysqli->query("SELECT id, name, label_image FROM beers ORDER BY beer_id DESC");
 								
 							$rows = array();
 							while ($r = $rslt->fetch_object()) {
