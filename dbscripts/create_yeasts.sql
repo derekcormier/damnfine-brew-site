@@ -63,3 +63,9 @@ VALUES (8, 1, 'California Ale Yeast WLP001', 'White Labs', 'Liquid');
 
 INSERT INTO yeasts (beer_id, list_order, name, company, style)
 VALUES (9, 1, 'Bavarian Wheat Blend 3056', 'Wyeast', 'Liquid');
+
+
+# MacGreggors Brew: Fall Classic
+
+INSERT INTO yeasts (beer_id, list_order, name, company, style)
+VALUES (10, 1, 'American Ale 1056', 'Wyeast', 'Liquid');

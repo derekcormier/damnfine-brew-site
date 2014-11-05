@@ -101,3 +101,21 @@ VALUES (7, 3, 'Prepared Horseradish', 'Some', 'Not Sure');
 
 INSERT INTO extras (beer_id, list_order, name, amount, used)
 VALUES (8, 1, 'Grapefruit Zest', '1 Fruit', 'Boil');
+
+
+#MacGreggors Brew: Fall Classic
+
+INSERT INTO extras (beer_id, list_order, name, amount, used)
+VALUES (10, 1, 'Butternut Squash', '5 lb.', 'Mash');
+
+INSERT INTO extras (beer_id, list_order, name, amount, used)
+VALUES (10, 2, 'Allspice', '1/8 Teaspoon', '10 mins. Boil');
+
+INSERT INTO extras (beer_id, list_order, name, amount, used)
+VALUES (10, 3, 'Ground Nutmeg', '1/8 Teaspoon', '10 mins. Boil');
+
+INSERT INTO extras (beer_id, list_order, name, amount, used)
+VALUES (10, 4, 'Ground Ginger', '1/4 Teaspoon', '10 mins. Boil');
+
+INSERT INTO extras (beer_id, list_order, name, amount, used)
+VALUES (10, 5, 'Ground Cinnamon', '1/2 Teaspoon', '10 mins. Boil');

@@ -40,8 +40,11 @@ INSERT INTO beers (name, label_image, abv, ibu, srm, highlight_color, descriptio
 
 # Penny Weize Lb. Foolish
 INSERT INTO beers (beer_id, name, label_image, abv, ibu, srm, highlight_color, description) 
-VALUES (9, 'Penny Weize, Lb. Foolish', 'penny.svg', 6, 23, 14, '#c26938', 'A near-sessionable Weizenbock with strong banana-like phenol flavor.');
+VALUES (9, 'Penny Weize, Lb. Foolish', 'penny.svg', 6, 23, 14, '#c26938', 'A near-sessionable Weizenbock with strong banana-like ester flavor.');
 
+# MacGreggor's Brew: Fall Classic
+INSERT INTO beers (beer_id, name, label_image, abv, ibu, srm, o_g, f_g, highlight_color, description) 
+VALUES (10, 'MacGreggor\'s Brew: Fall Classic', 'fall.svg', 4.9, 16, 10, 1.050, 1.012, '#faa91c', 'A pumpkin, I mean... butternut squash beer crafted especially to celebrate the flavors of autumn.');
 
 UPDATE beers SET description='MacGreggor\'s Brew was a long time coming. The idea came about after a long night of partaking in beverages, jamming, and reminiscing with good friends in the usual haunt: MacGreggor\'s.
 

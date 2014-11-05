@@ -125,3 +125,9 @@ VALUES (9, 1, 'Perle', '0.8 oz.', 'Pellet', '60 mins.', 'Boil');
 
 INSERT INTO hops (beer_id, list_order, hop, amount, style, timing, used)
 VALUES (9, 2, 'Hallertau', '0.4 oz.', 'Pellet', '5 mins.', 'Boil');
+
+
+# MacGreggors Brew: Fall Classic
+
+INSERT INTO hops (beer_id, list_order, hop, amount, style, timing, used)
+VALUES (10, 1, 'Willamette', '1 oz.', 'Pellet', '60 mins.', 'Boil');

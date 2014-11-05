@@ -233,3 +233,33 @@ VALUES (9, 7, 'Remove wort from heat and cool to about 70&deg;. Transfer wort in
 
 INSERT INTO recipe_steps (beer_id, list_order, step)
 VALUES (9, 8, 'After fermenting for a week total, bottle beer with priming sugar.');
+
+
+# MacGreggors Brew: Fall Classic
+
+INSERT INTO recipe_steps (beer_id, list_order, step)
+VALUES (10, 1, 'Cut the butternut squash in half and roast at 400&deg; for about 45 minutes or until soft.'); 
+
+INSERT INTO recipe_steps (beer_id, list_order, step)
+VALUES (10, 2, 'Remove the skin from the squash and chop squash into very small pieces.');
+
+INSERT INTO recipe_steps (beer_id, list_order, step)
+VALUES (10, 3, 'Using a mash tun, mash all grains with water at 154&deg;. Mix the squash into the mash and mash for 60 minutes.');
+
+INSERT INTO recipe_steps (beer_id, list_order, step)
+VALUES (10, 4, 'While Mashing, heat sparge water to 170&deg;.');
+
+INSERT INTO recipe_steps (beer_id, list_order, step)
+VALUES (10, 5, 'Vorlauf until wort runs fairly clear of debris. Empty runnings into kettle.');
+
+INSERT INTO recipe_steps (beer_id, list_order, step)
+VALUES (10, 6, 'Add all sparge water to the mash tun and mix the grain. Vorlauf immediately until wort runs fairly clear of debris. Empty runnings into kettle.');
+
+INSERT INTO recipe_steps (beer_id, list_order, step)
+VALUES (10, 7, 'Follow the Boil Schedule:<table><tr><th  class="boil-ingredient-table">Ingredient</th><th >Amount</th><th >Time</th></tr><tr><td>Willamette Hops</td><td>1 oz.</td><td>60 mins.</td></tr><tr><td>Allspice</td><td>1/8 Teaspoon</td><td>10 mins.</td></tr><tr><td>Ground Nutmeg</td><td>1/8 Teaspoon</td><td>10 mins.</td></tr><tr><td>Ground Ginger</td><td>1/4 Teaspoon</td><td>10 mins.</td></tr><tr><td>Ground Cinnamon</td><td>1/2 Teaspoon</td><td>10 mins.</td></tr></table>');
+
+INSERT INTO recipe_steps (beer_id, list_order, step)
+VALUES (10, 8, 'Remove wort from heat and cool to about 70&deg;. Transfer wort into fermenter. Pitch the yeast and stir thoroughly. Close the fermenter and use airlock.');
+
+INSERT INTO recipe_steps (beer_id, list_order, step)
+VALUES (10, 9, 'After fermenting for two weeks total, keg beer or bottle beer with priming sugar.');

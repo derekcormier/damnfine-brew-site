@@ -117,3 +117,17 @@ VALUES (9, 2, 'Dark Munich', '5 lbs.', 41);
 
 INSERT INTO fermentables (beer_id, list_order, fermentable, amount, percent)
 VALUES (9, 3, 'CaraMunich', '10 oz.', 5);
+
+# MacGreggors Brew: Fall Classic
+
+INSERT INTO fermentables (beer_id, list_order, fermentable, amount, percent)
+VALUES (10, 1, '2-Row', '7 lbs.', 70);
+
+INSERT INTO fermentables (beer_id, list_order, fermentable, amount, percent)
+VALUES (10, 2, 'Caramel 60L', '1 lb.', 10);
+
+INSERT INTO fermentables (beer_id, list_order, fermentable, amount, percent)
+VALUES (10, 3, 'Victory', '1 lb.', 10);
+
+INSERT INTO fermentables (beer_id, list_order, fermentable, amount, percent)
+VALUES (10, 4, 'Dark Brown Sugar', '1 lb.', 10);
