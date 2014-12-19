@@ -263,3 +263,30 @@ VALUES (10, 8, 'Remove wort from heat and cool to about 70&deg;. Transfer wort i
 
 INSERT INTO recipe_steps (beer_id, list_order, step)
 VALUES (10, 9, 'After fermenting for two weeks total, keg beer or bottle beer with priming sugar.');
+
+
+# Sasquatch Piss
+
+INSERT INTO recipe_steps (beer_id, list_order, step)
+VALUES (11, 1, 'Using a mash tun, mash all grains with 4.5 gallons of water for 60 minutes at 155&deg;.');
+
+INSERT INTO recipe_steps (beer_id, list_order, step)
+VALUES (11, 2, 'While Mashing, heat 4.5 gallons of sparge water to 170&deg;.');
+
+INSERT INTO recipe_steps (beer_id, list_order, step)
+VALUES (11, 3, 'Vorlauf until wort runs fairly clear of debris. Empty runnings into kettle.');
+
+INSERT INTO recipe_steps (beer_id, list_order, step)
+VALUES (11, 4, 'Add all sparge water to the mash tun and mix the grain. Vorlauf immediately until wort runs fairly clear of debris. Empty runnings into kettle.');
+
+INSERT INTO recipe_steps (beer_id, list_order, step)
+VALUES (11, 5, 'Follow the Boil Schedule:<table><tr><th  class="boil-ingredient-table">Ingredient</th><th >Amount</th><th >Time</th></tr><tr><td>Amarillo Hops</td><td>.5 oz.</td><td>15 mins.</td></tr><tr><td>Chinook Hops</td><td>.5 oz.</td><td>15 mins.</td></tr><tr><td>Columbus Hops</td><td>.5 oz.</td><td>15 mins.</td></tr><tr><td>Galaxy Hops</td><td>.5 oz.</td><td>15 mins.</td></tr><tr><td>Amarillo Hops</td><td>.5 oz.</td><td>10 mins.</td></tr><tr><td>Chinook Hops</td><td>.5 oz.</td><td>10 mins.</td></tr><tr><td>Columbus Hops</td><td>.5 oz.</td><td>10 mins.</td></tr><tr><td>Galaxy Hops</td><td>.5 oz.</td><td>10 mins.</td></tr><tr><td>Amarillo Hops</td><td>.5 oz.</td><td>5 mins.</td></tr><tr><td>Chinook Hops</td><td>.5 oz.</td><td>5 mins.</td></tr><tr><td>Columbus Hops</td><td>.5 oz.</td><td>5 mins.</td></tr><tr><td>Galaxy Hops</td><td>.5 oz.</td><td>5 mins.</td></tr></table>');
+
+INSERT INTO recipe_steps (beer_id, list_order, step)
+VALUES (11, 6, 'Remove wort from heat and cool to about 70&deg;. Transfer wort into fermenter. Pitch the yeast and stir thoroughly. Close the fermenter and use airlock.');
+
+INSERT INTO recipe_steps (beer_id, list_order, step)
+VALUES (11, 7, 'After fermenting for 7 days, add 0.5 oz. of Amarillo hops, 0.5 oz. of Chinook hops, 0.5 oz. of Columbus hops, and 0.5 oz. of Galaxy hops to the fermenter.');
+
+INSERT INTO recipe_steps (beer_id, list_order, step)
+VALUES (11, 8, 'After fermenting for two weeks total, keg beer or bottle beer with priming sugar.');

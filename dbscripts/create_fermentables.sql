@@ -131,3 +131,14 @@ VALUES (10, 3, 'Victory', '1 lb.', 10);
 
 INSERT INTO fermentables (beer_id, list_order, fermentable, amount, percent)
 VALUES (10, 4, 'Dark Brown Sugar', '1 lb.', 10);
+
+# Sasquatch Piss
+
+INSERT INTO fermentables (beer_id, list_order, fermentable, amount, percent)
+VALUES (11, 1, '2-Row', '9 lbs.', 85);
+
+INSERT INTO fermentables (beer_id, list_order, fermentable, amount, percent)
+VALUES (11, 2, 'Caramel 40L', '12 oz.', 7);
+
+INSERT INTO fermentables (beer_id, list_order, fermentable, amount, percent)
+VALUES (11, 3, 'Corn Sugar', '12 oz.', 7);

@@ -81,7 +81,7 @@ $(function($) {
 	
 	// Clicking on the magnify button will display the label larger
 	$('a#magnify').click(function () {
-		$('#zoomed-label').attr("src", "./images/" + beerInfo[labelNum].label_image);
+		$('#zoomed-label').attr("src", "./images/" + beerInfo[labelNum].label_image + ".svg");
 
 		$('#magnified').fadeIn(400);
 	});

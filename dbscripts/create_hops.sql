@@ -131,3 +131,53 @@ VALUES (9, 2, 'Hallertau', '0.4 oz.', 'Pellet', '5 mins.', 'Boil');
 
 INSERT INTO hops (beer_id, list_order, hop, amount, style, timing, used)
 VALUES (10, 1, 'Willamette', '1 oz.', 'Pellet', '60 mins.', 'Boil');
+
+# Sasquatch Piss
+
+INSERT INTO hops (beer_id, list_order, hop, amount, style, timing, used)
+VALUES (11, 1, 'Amarillo', '0.5 oz.', 'Pellet', '15 mins.', 'Boil');
+
+INSERT INTO hops (beer_id, list_order, hop, amount, style, timing, used)
+VALUES (11, 2, 'Chinook', '0.5 oz.', 'Pellet', '15 mins.', 'Boil');
+
+INSERT INTO hops (beer_id, list_order, hop, amount, style, timing, used)
+VALUES (11, 3, 'Columbus', '0.5 oz.', 'Pellet', '15 mins.', 'Boil');
+
+INSERT INTO hops (beer_id, list_order, hop, amount, style, timing, used)
+VALUES (11, 4, 'Galaxy', '0.5 oz.', 'Pellet', '15 mins.', 'Boil');
+
+INSERT INTO hops (beer_id, list_order, hop, amount, style, timing, used)
+VALUES (11, 5, 'Amarillo', '0.5 oz.', 'Pellet', '10 mins.', 'Boil');
+
+INSERT INTO hops (beer_id, list_order, hop, amount, style, timing, used)
+VALUES (11, 6, 'Chinook', '0.5 oz.', 'Pellet', '10 mins.', 'Boil');
+
+INSERT INTO hops (beer_id, list_order, hop, amount, style, timing, used)
+VALUES (11, 7, 'Columbus', '0.5 oz.', 'Pellet', '10 mins.', 'Boil');
+
+INSERT INTO hops (beer_id, list_order, hop, amount, style, timing, used)
+VALUES (11, 8, 'Galaxy', '0.5 oz.', 'Pellet', '10 mins.', 'Boil');
+
+INSERT INTO hops (beer_id, list_order, hop, amount, style, timing, used)
+VALUES (11, 9, 'Amarillo', '0.5 oz.', 'Pellet', '5 mins.', 'Boil');
+
+INSERT INTO hops (beer_id, list_order, hop, amount, style, timing, used)
+VALUES (11, 10, 'Chinook', '0.5 oz.', 'Pellet', '5 mins.', 'Boil');
+
+INSERT INTO hops (beer_id, list_order, hop, amount, style, timing, used)
+VALUES (11, 11, 'Columbus', '0.5 oz.', 'Pellet', '5 mins.', 'Boil');
+
+INSERT INTO hops (beer_id, list_order, hop, amount, style, timing, used)
+VALUES (11, 12, 'Galaxy', '0.5 oz.', 'Pellet', '5 mins.', 'Boil');
+
+INSERT INTO hops (beer_id, list_order, hop, amount, style, timing, used)
+VALUES (11, 13, 'Amarillo', '0.5 oz.', 'Pellet', '7 days', 'Dry Hop');
+
+INSERT INTO hops (beer_id, list_order, hop, amount, style, timing, used)
+VALUES (11, 14, 'Chinook', '0.5 oz.', 'Pellet', '7 days', 'Dry Hop');
+
+INSERT INTO hops (beer_id, list_order, hop, amount, style, timing, used)
+VALUES (11, 15, 'Columbus', '0.5 oz.', 'Pellet', '7 days', 'Dry Hop');
+
+INSERT INTO hops (beer_id, list_order, hop, amount, style, timing, used)
+VALUES (11, 16, 'Galaxy', '0.5 oz.', 'Pellet', '7 days', 'Dry Hop');

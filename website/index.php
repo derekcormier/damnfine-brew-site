@@ -58,7 +58,7 @@
 							}
 							
 							for($i = 0; $i < count($rows); $i++) {
-								echo '<li><img class="slide" src="http://www.damnfinebrew.com/images/' . $rows[$i][0] . '" '.
+								echo '<li><img class="slide" src="http://www.damnfinebrew.com/images/' . $rows[$i][0] . '.png" '.
 									'alt="The beer label for ' . $rows[$i][1] . '"/></li>';
 							}
 						?>

@@ -69,3 +69,8 @@ VALUES (9, 1, 'Bavarian Wheat Blend 3056', 'Wyeast', 'Liquid');
 
 INSERT INTO yeasts (beer_id, list_order, name, company, style)
 VALUES (10, 1, 'American Ale 1056', 'Wyeast', 'Liquid');
+
+# Sasquatch Piss
+
+INSERT INTO yeasts (beer_id, list_order, name, company, style)
+VALUES (11, 1, 'San Diego Super WLP090', 'Wyeast', 'Liquid');
