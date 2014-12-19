@@ -35,4 +35,5 @@
 			}
 		?>
 	</div>
+	<?php include './php/instagram_feed.php'; ?>
 </div>

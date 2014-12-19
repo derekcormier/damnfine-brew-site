@@ -252,6 +252,27 @@ div.blog-preview-divider {
 	height: 2px;
 }
 
+/***************** Instagram Feed *****************/
+
+div#instagramfeed {
+	position: relative;
+	font-size: 0;
+	margin: 0px 0px 10px 10px;
+}
+
+img#instagramicon {
+	z-index: 30;
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	width: 30px;
+	height: 30px;
+}
+
+img.instagramphoto {
+	display: inline-block;
+	width: 50%;
+}
 
 /*****************************************************************************/
 /********************************** Content **********************************/
