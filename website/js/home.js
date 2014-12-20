@@ -81,20 +81,23 @@ $(function($) {
 	
 	// Clicking on the magnify button will display the label larger
 	$('a#magnify').click(function () {
-		$('#zoomed-label').attr("src", "./images/" + beerInfo[labelNum].label_image + ".svg");
+		
 
 		$('#magnified').fadeIn(400);
+		$('#zoomed-label').attr("src", "./images/" + beerInfo[labelNum].label_image + ".svg");
 	});
 	
 	
 	// Clicking on the unmagnify button will return to the page
-	$('#magnify-back').click(function () {	
+	$('#magnify-back').click(function () {
+		$('#zoomed-label').attr("src", "./images/blank.png");
 		$('#magnified').fadeOut(400);
 	});
 	
 	
 	// Clicking outside of the zoomed image will return to the page
 	$('#unmagnify').click(function () {	
+		$('#zoomed-label').attr("src", "./images/blank.png");
 		$('#magnified').fadeOut(400);
 	});
 	

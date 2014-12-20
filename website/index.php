@@ -24,7 +24,7 @@
 		<div id="magnified">
 			<div id="magnify-back"></div>
 			<div id="magnify-window">
-				<img id="zoomed-label" src="http://www.damnfinebrew.com/images/mcgbrew.svg" alt="Zoomed in label">
+				<img id="zoomed-label" src="http://www.damnfinebrew.com/images/blank.png" alt="Zoomed in label">
 				<a href="javascript:void(0);" id="unmagnify">
 					<div>
 						<img src="./images/magglass.svg" alt="Label Magnifier">
