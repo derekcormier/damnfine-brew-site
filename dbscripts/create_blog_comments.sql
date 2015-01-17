@@ -14,7 +14,3 @@ CREATE TABLE blog_comment (
 	unhelpful_count INT NOT NULL,
 	PRIMARY KEY( id )
 ) ENGINE=InnoDB;
-
-
-INSERT INTO blog_comment (post_id, posted_date, name, email, comment, reply_level, approved, helpful_count, unhelpful_count)
-VALUES (12, NOW(), 'Robert Finnegan', 'robert.finnegan@mailinator.com', 'Panera is simply the best place to go for fresh baked goods and great pals! :o)', 1, true, 0, 0);
